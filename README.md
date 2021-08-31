@@ -90,7 +90,7 @@
  <details>  
 <summary>2. SSDT-PNLF</summary>   
   
-Thanks[@Lorys89](https://github.com/acidanthera/OpenCorePkg/pull/279#issuecomment-892493005)  
+Thanks[@Lorys89,(https://github.com/acidanthera/OpenCorePkg/pull/279#issuecomment-892493005)]
   
 he is developer of SSDT-PNLF.   
 
