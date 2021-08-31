@@ -56,7 +56,7 @@
 - `Lilu.kext`
 - `RealtekRTL8111.kext`
 - `RestrictEvents.kext`
-- `VirtualSMC.kext(SMCLightSensor,SMCProcessor,SMCBatteryManager`disable`)`
+- `VirtualSMC.kext`(SMCLightSensor,SMCProcessor,SMCBatteryManager`disable`)
 - `USBInjectAll.kext`
 - `VoodooPS2Controller.kext`
 - `VoodooRMI.kext`
