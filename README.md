@@ -99,10 +99,10 @@
 ## Thanks：
 
 
-- [@apple](https://www.apple.com/) created macos 
-
-
 - [hackintoshlife](https://www.hackintoshlife.it/)  
+
+
+- [@apple](https://www.apple.com/) created macos 
 
 
 - [@Baio1977](https://github.com/Baio1977) He made efi folder for me
