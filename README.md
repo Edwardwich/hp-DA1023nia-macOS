@@ -88,11 +88,21 @@
 <summary> TNX: </summary>   
      
  <details>  
-<summary>2. SSDT-PNLF</summary>   
+<summary>1. SSDT-PNLF</summary>   
   
 Thanks[@Lorys89,(https://github.com/acidanthera/OpenCorePkg/pull/279#issuecomment-892493005)]
   
 he is developer of SSDT-PNLF.   
+
+</details>
+ 
+ <details>  
+<summary>2. WIFI</summary>   
+  
+Thanks[@zxystd,(https://github.com/OpenIntelWireless/itlwm)]  
+  
+he is developer of wifi kext.   
+
 
 </details>
 
