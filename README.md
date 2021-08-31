@@ -102,7 +102,7 @@
 - [@apple](https://www.apple.com/) created macos 
 
 
-- [TNX](https://www.hackintoshlife.it/)  
+- [hackintoshlife](https://www.hackintoshlife.it/)  
 
 
 - [@Baio1977](https://github.com/Baio1977) He made efi folder for me
