@@ -108,10 +108,10 @@
 - [@apple](https://www.apple.com/) created macos 
 
 
-- [@Baio1977](https://github.com/Baio1977) He made efi folder for me
+- [@Baio1977](https://github.com/Baio1977) He made efi folder and ssdt
 
 
-- [@Lorys89](https://github.com/Lorys89) fix SSDT-PNLF for whiskey lake 8265u
+- [@Lorys89](https://github.com/Lorys89) fix SSDT-PNLF for whiskey lake 8265u and ssdt
 
  
 - [@zxystd](https://github.com/OpenIntelWireless/itlwm) created kexts of wifi and bluetooth  
