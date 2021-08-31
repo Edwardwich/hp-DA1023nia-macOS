@@ -41,27 +41,27 @@
 
 
 <details>  
-<summary> Kexts：</summary> 
-
-- `ACPIBatteryManager.kext`
-- `AirportItlwm.kext`
-- `AppleALC.kext`
-- `BrightnessKeys.kext`
-- `CtlnaAHCIPort.kext`
-- `ECEnabler.kext`
-- `HibernationFixup.kext`
-- `HoRNDIS.kext`
-- `IntelBluetoothFirmware.kext`
-- `IntelBluetoothInjector.kext`
+<summary> Kexts：</summary>
+ 
 - `Lilu.kext`
-- `RealtekRTL8111.kext`
-- `RestrictEvents.kext`
 - `VirtualSMC.kext`(SMCLightSensor,SMCProcessor,SMCBatteryManager`disable`)
-- `USBInjectAll.kext`
+- `WhateverGreen.kext`
+- `AppleALC.kext`
+- `ECEnabler.kext`
+- `CtlnaAHCIPort.kext`
+- `HibernationFixup.kext`
+- `RestrictEvents.kext`
 - `VoodooPS2Controller.kext`
+- `BrightnessKeys.kext`
 - `VoodooRMI.kext`
 - `VoodooSMBus.kext`
-- `WhateverGreen.kext`
+- `ACPIBatteryManager.kext`
+- `AirportItlwm.kext`
+- `IntelBluetoothFirmware.kext`
+- `IntelBluetoothInjector.kext`
+- `HoRNDIS.kext`
+- `RealtekRTL8111.kext`
+- `USBInjectAll.kext`
 - `XHCI-unsupported.kext`
  
  
