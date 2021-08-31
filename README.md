@@ -99,7 +99,7 @@
 ## Thanks：
 
 
-- [hackintoshlife](https://www.hackintoshlife.it/)  
+- [hackintoshlife](https://github.com/Hackintoshlifeit)  
 
 
 - [@apple](https://www.apple.com/) created macos 
