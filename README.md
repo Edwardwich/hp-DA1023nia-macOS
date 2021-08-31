@@ -102,6 +102,9 @@
 - [@hackintoshlife](https://github.com/Hackintoshlifeit) best gp for hackintosh
 
 
+- [@acidanthera](https://github.com/acidanthera/OpenCorePkg)for OpenCorePkg 
+
+
 - [@apple](https://www.apple.com/) created macos 
 
 
