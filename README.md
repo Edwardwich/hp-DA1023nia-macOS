@@ -16,6 +16,31 @@
 
 - macOS Big Sur 11.5.2
 
+<details>  
+<summary> SSDT：</summary> 
+
+- `SSDT-ACAD`
+- `SSDT-ALS0`
+- `SSDT-AWAC`
+- `SSDT-EC-USBX`
+- `SSDT-GAUS`
+- `SSDT-GPRW`
+- `SSDT-MCHC`
+- `SSDT-PLUG`
+- `SSDT-PMCR`
+- `SSDT-PNLF`
+- `SSDT-SLPB`
+- `SSDT-SRAM`
+- `SSDT-TERM`
+- `SSDT-UIAC`
+- `SSDT-XOSI`
+- `SSDT-XSPI`
+
+
+
+</details> 
+
+
 #### SSDT:
 
 
