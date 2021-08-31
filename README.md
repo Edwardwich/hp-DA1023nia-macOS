@@ -99,7 +99,7 @@
 ## Thanks：
 
 
-- [hackintoshlife](https://github.com/Hackintoshlifeit)  
+- [@hackintoshlife](https://github.com/Hackintoshlifeit) best gp for hackintosh
 
 
 - [@apple](https://www.apple.com/) created macos 
