@@ -16,7 +16,7 @@
 
 - macOS Big Sur 11.5.2
 
-<details>  
+##<details>  
 <summary> SSDT：</summary> 
 
 - `SSDT-ACAD`
@@ -40,7 +40,7 @@
 
 
 
-<details>  
+##<details>  
 <summary> Kexts：</summary>
  
 - `Lilu.kext`
