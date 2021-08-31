@@ -104,4 +104,4 @@
  
 - [@zxystd](https://github.com/OpenIntelWireless/itlwm) created kexts of wifi and bluetooth  
 
-- Thanks[@Lorys89](https://github.com/acidanthera/OpenCorePkg/pull/279#issuecomment-892493005) fix SSDT-PNLF for whiskey lake 8265u
+- [@Lorys89](https://github.com/acidanthera/OpenCorePkg/pull/279#issuecomment-892493005) fix SSDT-PNLF for whiskey lake 8265u
