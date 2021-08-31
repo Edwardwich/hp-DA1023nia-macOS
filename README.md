@@ -98,10 +98,15 @@
 
 ## Thanks：
 
-- [@intel](https://www.intel.com/content/www/us/en/homepage.html) produce cpu for us
 
 - [@apple](https://www.apple.com/) created macos  
+
+
+- [@Baio1977](https://github.com/Baio1977) He made efi folder for me
+
+
+- [@Lorys89](https://github.com/Lorys89) fix SSDT-PNLF for whiskey lake 8265u
+
  
 - [@zxystd](https://github.com/OpenIntelWireless/itlwm) created kexts of wifi and bluetooth  
 
-- [@Lorys89](https://github.com/acidanthera/OpenCorePkg/pull/279#issuecomment-892493005) fix SSDT-PNLF for whiskey lake 8265u
