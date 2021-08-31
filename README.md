@@ -29,6 +29,14 @@
 - `SSDT-PLUG`
 - `SSDT-PMCR`
 - `SSDT-PNLF`
+ <details>  
+<summary>2. SSDT-PNLF</summary>   
+  
+Thanks[@Lorys89](https://github.com/acidanthera/OpenCorePkg/pull/279#issuecomment-892493005)  
+  
+he is developer of SSDT-PNLF.   
+
+</details>
 - `SSDT-SLPB`
 - `SSDT-SRAM`
 - `SSDT-TERM`
