@@ -89,21 +89,6 @@
 
 ## Screen Shot
 
-<details>  
-<summary> macOS Big Sur：</summary>
-## Screen Shot
-
-
-![Screen Shot 2021-08-31 at 11 43 02 AM](https://user-images.githubusercontent.com/35195176/131459358-450decf9-e3a9-4c92-af8f-6f9e449dbf58.png)
-![Screen Shot 2021-08-31 at 10 48 22 AM](https://user-images.githubusercontent.com/35195176/131452081-4812a928-e014-4eb5-8e25-7303ae848981.png)
-![Screen Shot 2021-07-17 at 11 09 16 PM](https://user-images.githubusercontent.com/35195176/126046637-82be6186-ce66-4f39-88b9-6b9069f3016d.png)
-![Screen Shot 2021-07-19 at 10 01 37 PM](https://user-images.githubusercontent.com/35195176/126202033-154ae712-eb06-4125-b2df-a8f9835b8234.png)
-![Screen Shot 2021-07-17 at 11 09 22 PM](https://user-images.githubusercontent.com/35195176/126046639-7fb97a70-28a6-49b3-bdc2-9a550e480792.png)
-![Screen Shot 2021-07-19 at 9 57 50 PM](https://user-images.githubusercontent.com/35195176/126201610-3d16c481-d323-4741-b81b-1053b74ec9d8.png)
-![Screen Shot 2021-07-19 at 9 59 02 PM](https://user-images.githubusercontent.com/35195176/126201784-4fd6274f-e3ce-4e57-b79b-cce944536331.png)
- 
- 
-</details>
 
 ![Screen Shot 2021-08-31 at 11 43 02 AM](https://user-images.githubusercontent.com/35195176/131459358-450decf9-e3a9-4c92-af8f-6f9e449dbf58.png)
 ![Screen Shot 2021-08-31 at 10 48 22 AM](https://user-images.githubusercontent.com/35195176/131452081-4812a928-e014-4eb5-8e25-7303ae848981.png)
