@@ -57,7 +57,7 @@
 - `VoodooSMBus.kext`
 - `ACPIBatteryManager.kext`
 - `AirportItlwm.kext`
-- `BlueToolFixup.kext`(if you isntall mac os Monterey use this kext and delete `IntelBluetoothInjector.kext`)
+- `BlueToolFixup.kext`(if you isntall mac os Monterey use this kext and delete `BluetoothInjector.kext`)
 - `IntelBluetoothFirmware.kext`
 - `IntelBluetoothInjector.kext`
 - `HoRNDIS.kext`
