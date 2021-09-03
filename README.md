@@ -91,6 +91,9 @@
 
 <details>  
 <summary> macOS Big Sur：</summary>
+## Screen Shot
+
+
 ![Screen Shot 2021-08-31 at 11 43 02 AM](https://user-images.githubusercontent.com/35195176/131459358-450decf9-e3a9-4c92-af8f-6f9e449dbf58.png)
 ![Screen Shot 2021-08-31 at 10 48 22 AM](https://user-images.githubusercontent.com/35195176/131452081-4812a928-e014-4eb5-8e25-7303ae848981.png)
 ![Screen Shot 2021-07-17 at 11 09 16 PM](https://user-images.githubusercontent.com/35195176/126046637-82be6186-ce66-4f39-88b9-6b9069f3016d.png)
