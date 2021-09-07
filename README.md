@@ -22,7 +22,7 @@ Dont forget add Serial Number to smbios
 
 ## MacOS Versions Supported:
 
-## SSDT & Kexts :
+## Config & SSDT & Kexts :
 <details>  
 <summary> Config：</summary> 
 
