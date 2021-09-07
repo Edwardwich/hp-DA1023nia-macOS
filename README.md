@@ -20,7 +20,6 @@ Dont forget add Serial Number to smbios
 - macOS Big Sur 11.5.2
 - macOS Monterey Beta
 
-## MacOS Versions Supported:
 
 ## Config & SSDT & Kexts :
 <details>  
