@@ -25,12 +25,11 @@ Dont forget add Serial Number to smbios
 ## SSDT & Kexts :
 <details>  
 <summary> Config：</summary> 
+
 - add Serial Number to smbios:
 - `PlatformInfo`>`Generic`>`SystemSerialNumber`
 - for help see [opencore smbios guide](https://dortania.github.io/OpenCore-Install-Guide/extras/smbios-support.html#how-to-decide)
-- `SSDT-ACAD`
-- `SSDT-ALS0`
-- `SSDT-AWAC`
+
  
  
 
