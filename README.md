@@ -1,6 +1,7 @@
 
 
 # HP DA1023nia Hackintosh
+Dont forget add Serial Number to smbios
 
 ## Configuration
 
@@ -10,6 +11,9 @@
 | Integrated Graphics | Intel UHD Graphics 620       |
 | Sound Card          | Realtek ALC236 (layout-id:14) |
 | Wireless Card       | RTL8821CE Replaced with(Intel Wireless N-7265)      |
+
+
+
 
 ## MacOS Versions Supported:
 
