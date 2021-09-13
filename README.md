@@ -36,7 +36,7 @@ Dont forget add Serial Number to smbios
 
 
 <details>  
-<summary> SSDT：</summary> 
+<summary> APCI：</summary> 
 
 - `SSDT-ACAD`
 - `SSDT-ALS0`
