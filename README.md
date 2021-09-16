@@ -61,7 +61,7 @@ Dont forget add Serial Number to smbios
 <summary> Kexts：</summary>
  
 - `Lilu.kext`
-- `VirtualSMC.kext`(SMCLightSensor,SMCProcessor,SMCBatteryManager`disable`)
+- `VirtualSMC.kext`
 - `WhateverGreen.kext`
 - `AppleALC.kext`
 - `ECEnabler.kext`
@@ -72,7 +72,6 @@ Dont forget add Serial Number to smbios
 - `BrightnessKeys.kext`
 - `VoodooRMI.kext`
 - `VoodooSMBus.kext`
-- `ACPIBatteryManager.kext`
 - `AirportItlwm.kext`
 - `BlueToolFixup.kext`(if you isntall mac os Monterey use this kext and delete `BluetoothInjector.kext`)
 - `IntelBluetoothFirmware.kext`
