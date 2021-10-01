@@ -18,7 +18,7 @@ Dont forget add Serial Number to smbios
 ## MacOS Versions Supported:
 
 - macOS Big Sur 11.5.2
-- macOS Monterey Beta
+- macOS Monterey Beta 8(21A5534d)
 
 
 ## Config & SSDT & Kexts :
@@ -93,7 +93,7 @@ Dont forget add Serial Number to smbios
 - [x] Trackpad (gestures)
 - [x] HDMI: video and audio
 - [x] USB 3.0
-- [x] Battery Management (ACPIBatteryManager.kext)
+- [x] Battery Management 
 - [x] Brightness
 - [x] Built-in camera
 - [x] Built-in mic
