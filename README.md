@@ -1,7 +1,7 @@
 
 
 # HP DA1023nia Hackintosh
-Dont forget add Serial Number to smbios
+
 
 ## Configuration
 
