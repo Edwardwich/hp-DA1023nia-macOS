@@ -59,7 +59,7 @@
 <summary> Kexts：</summary>
  
 - `Lilu.kext`
-- `VirtualSMC.kext`
+- `VirtualSMC.kext`(`ACPIBatteryManager.kext`use for battery)
 - `WhateverGreen.kext`
 - `AppleALC.kext`
 - `ECEnabler.kext`
@@ -76,9 +76,7 @@
 - `IntelBluetoothInjector.kext`
 - `HoRNDIS.kext`
 - `RealtekRTL8111.kext`
-- `USBInjectAll.kext`
-- `XHCI-unsupported.kext`
- 
+- `USBInjectAll.kext`(`USBPorts.kext`usb mapping) 
  
 </details> 
 
