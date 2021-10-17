@@ -50,7 +50,6 @@
 - `SSDT-SLPB`
 - `SSDT-SRAM`
 - `SSDT-TERM`
-- `SSDT-UIAC`
 - `SSDT-XOSI`
 - `SSDT-XSPI`
 
