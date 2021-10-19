@@ -89,11 +89,10 @@
 
 ## Screen Shot
 
-![Screen Shot 2021-09-06 at 10 22 05 PM](https://user-images.githubusercontent.com/35195176/132250512-8e84bca4-2d9a-46fb-88cf-8b71ed997aa9.png)
+
+![Screen Shot 1400-07-26 at 11 43 04 PM](https://user-images.githubusercontent.com/35195176/137881878-c3642bed-6b50-4f89-bdc7-ae033bf90e7b.png)
 ![Screen Shot 2021-08-31 at 10 48 22 AM](https://user-images.githubusercontent.com/35195176/131452081-4812a928-e014-4eb5-8e25-7303ae848981.png)
 ![Screen Shot 2021-09-05 at 2 56 02 AM](https://user-images.githubusercontent.com/35195176/132109390-28545837-e1a9-47a7-987e-e11cbbb93377.png)
-![Screen Shot 2021-09-05 at 2 56 59 AM](https://user-images.githubusercontent.com/35195176/132109491-1eff054c-4e58-43d0-a06e-a1b4a9cc8ae8.png)
-![Screen Shot 2021-09-05 at 3 03 29 AM](https://user-images.githubusercontent.com/35195176/132109500-09d634a6-76e6-4322-a2a4-bec2ef76ad9c.png)
 
 
 
