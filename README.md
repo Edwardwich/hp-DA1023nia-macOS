@@ -91,8 +91,7 @@
 
 
 ![Screen Shot 1400-07-26 at 11 43 04 PM](https://user-images.githubusercontent.com/35195176/137881878-c3642bed-6b50-4f89-bdc7-ae033bf90e7b.png)
-![Screen Shot 2021-08-31 at 10 48 22 AM](https://user-images.githubusercontent.com/35195176/131452081-4812a928-e014-4eb5-8e25-7303ae848981.png)
-![Screen Shot 2021-09-05 at 2 56 02 AM](https://user-images.githubusercontent.com/35195176/132109390-28545837-e1a9-47a7-987e-e11cbbb93377.png)
+![Screen Shot 1400-07-27 at 2 19 02 AM](https://user-images.githubusercontent.com/35195176/137882273-2bec62b3-40d9-45b5-abff-092784a198c1.png)
 
 
 
