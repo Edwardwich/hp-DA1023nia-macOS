@@ -48,6 +48,7 @@
  
 - `Lilu.kext`
 - `VirtualSMC.kext`(`ACPIBatteryManager.kext`use for battery)
+- `ACPIBatteryManager.kext`(Change build SDK)
 - `WhateverGreen.kext`
 - `AppleALC.kext`
 - `ECEnabler.kext`
