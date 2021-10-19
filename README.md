@@ -17,7 +17,7 @@
 
 ## MacOS Versions Supported:
 
-- macOS Monterey Beta 10(21A5552a)
+- macOS Monterey RC 12.0.1 (21A558)
 
 
 ## Config & SSDT & Kexts :
