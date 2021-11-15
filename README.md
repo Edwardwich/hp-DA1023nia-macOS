@@ -51,6 +51,8 @@
 - `ACPIBatteryManager.kext`(Change build SDK)
 - `WhateverGreen.kext`
 - `AppleALC.kext`
+- `CPUFriend.kext`
+- `CPUFriendDataProvider.kext`
 - `ECEnabler.kext`
 - `CPUFriend.kext`(and`CPUFriendDataProvider.kext`for improve battery)
 - `CtlnaAHCIPort.kext`
