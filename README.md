@@ -91,8 +91,8 @@
 
 ## Screen Shot
 
+![Screen Shot 1400-09-12 at 5 54 18 PM](https://user-images.githubusercontent.com/35195176/144618435-d4edeba2-ad46-419d-b99d-33011a215d31.png)
 
-![Screen Shot 1400-07-26 at 11 43 04 PM](https://user-images.githubusercontent.com/35195176/137881878-c3642bed-6b50-4f89-bdc7-ae033bf90e7b.png)
 
 ![Screen Shot 1400-07-30 at 7 39 27 PM](https://user-images.githubusercontent.com/35195176/138489029-87ecd7e3-fbdc-4b88-9125-4702fc2470d9.png)
 
