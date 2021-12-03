@@ -9,15 +9,15 @@
 | ------------------- | ---------------------------- |
 | CPU                 | Intel(R) Core(TM) i5-8265U   |
 | Integrated Graphics | Intel UHD Graphics 620       |
-| Sound Card          | Realtek ALC236 (layout-id:14) |
-| Wireless Card       | RTL8821CE Replaced with(Intel Wireless N-7265)      |
+| Sound Card          | Realtek ALC236 (layout-id: `3` or `14`) |
+| Wireless Card       | RTL8821CE Replaced with(`Intel Wireless N-7265`)      |
 
 
 
 
 ## MacOS Versions Supported:
 
-- macOS Monterey 12.0.1 (21A559)
+- macOS Monterey 12.1 Beta (21C5045a)
 
 
 ## Config & SSDT & Kexts :
@@ -48,12 +48,10 @@
  
 - `Lilu.kext`
 - `VirtualSMC.kext`(`ACPIBatteryManager.kext`use for battery)
-- `ACPIBatteryManager.kext`(Change build SDK)
 - `WhateverGreen.kext`
 - `AppleALC.kext`
 - `CPUFriend.kext`
 - `CPUFriendDataProvider.kext`
-- `ECEnabler.kext`
 - `CPUFriend.kext`(and`CPUFriendDataProvider.kext`for improve battery)
 - `CtlnaAHCIPort.kext`
 - `HibernationFixup.kext`
