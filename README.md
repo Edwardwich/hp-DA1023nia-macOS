@@ -25,22 +25,8 @@
 <details>  
 <summary> APCI：</summary> 
 
-- `SSDT-ACAD`
-- `SSDT-ALS0`
-- `SSDT-AWAC`
-- `SSDT-EC-USBX`
-- `SSDT-GAUS`
-- `SSDT-GPRW`
-- `SSDT-MCHC`
-- `SSDT-PLUG`
-- `SSDT-PMCR`
-- `SSDT-PNLF`
-- `SSDT-SLPB`
-- `SSDT-SRAM`
-- `SSDT-TERM`
-- `SSDT-XOSI`
-- `SSDT-XSPI`
-
+- `SSDT-HP_da1023nia`
+ 
 </details> 
 
 <details>  
