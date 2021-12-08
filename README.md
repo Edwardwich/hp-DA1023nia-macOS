@@ -33,7 +33,7 @@
 <summary> Kexts：</summary>
  
 - `Lilu.kext`
-- `VirtualSMC.kext`(`ACPIBatteryManager.kext`use for battery)
+- `VirtualSMC.kext`
 - `WhateverGreen.kext`
 - `AppleALC.kext`
 - `CPUFriend.kext`
