@@ -17,7 +17,7 @@
 
 ## MacOS Versions Supported:
 
-- macOS Monterey 12.1 Beta (21C5045a)
+- macOS Monterey 12.1 (21C51)
 
 
 ## Config & SSDT & Kexts :
@@ -77,8 +77,8 @@
 
 ## Screen Shot
 
-![Screen Shot 1400-09-12 at 5 54 18 PM](https://user-images.githubusercontent.com/35195176/144618435-d4edeba2-ad46-419d-b99d-33011a215d31.png)
 
+![Screen Shot 1400-09-17 at 12 38 44 PM](https://user-images.githubusercontent.com/35195176/145180743-23b243a4-22f0-40b8-8041-9dfb3c624076.png)
 
 ![Screen Shot 1400-07-30 at 7 39 27 PM](https://user-images.githubusercontent.com/35195176/138489029-87ecd7e3-fbdc-4b88-9125-4702fc2470d9.png)
 
