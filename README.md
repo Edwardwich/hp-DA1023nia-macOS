@@ -47,9 +47,8 @@
 - `VoodooRMI.kext`
 - `VoodooSMBus.kext`
 - `AirportItlwm.kext`
-- `BlueToolFixup.kext`(if you isntall mac os Monterey use this kext and delete `BluetoothInjector.kext`)
+- `BlueToolFixup.kext`
 - `IntelBluetoothFirmware.kext` 
-- `IntelBluetoothInjector.kext` (end wotking on mac os Monterey)
 - `HoRNDIS.kext`
 - `RealtekRTL8111.kext`
 - `USBInjectAll.kext`(`USBPorts.kext`usb mapping) 
