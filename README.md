@@ -39,18 +39,18 @@
 - `CPUFriend.kext`
 - `CPUFriendDataProvider.kext`
 - `CPUFriend.kext`(and`CPUFriendDataProvider.kext`for improve battery)
-- `NVMeFix.kext`
+- `CtlnaAHCIPort.kext`
 - `HibernationFixup.kext`
 - `RestrictEvents.kext`
 - `VoodooPS2Controller.kext`
 - `BrightnessKeys.kext`
-- `VoodooI2C.kext`
+- `VoodooRMI.kext`
+- `VoodooSMBus.kext`
 - `AirportItlwm.kext`
 - `BlueToolFixup.kext`
 - `IntelBluetoothFirmware.kext` 
 - `HoRNDIS.kext`
 - `RealtekRTL8111.kext`
-- `VerbStub`
 - `USBInjectAll.kext`(`USBPorts.kext`usb mapping) 
  
 </details> 
@@ -104,4 +104,3 @@
 
  
 - [@zxystd](https://github.com/OpenIntelWireless/itlwm) created kexts of wifi and bluetooth  
-
