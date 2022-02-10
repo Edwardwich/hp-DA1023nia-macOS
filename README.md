@@ -80,9 +80,7 @@
 
 ![Screen Shot 1400-09-20 at 5 36 34 PM](https://user-images.githubusercontent.com/35195176/145679493-80205a7c-2d8f-4cd5-add2-5c923480b5bd.png)
 
-![Screen Shot 1400-09-20 at 5 36 49 PM](https://user-images.githubusercontent.com/35195176/145679494-21bfcefe-9520-45c5-8003-81254d13707a.png)
 
-![Screen Shot 1400-09-20 at 5 37 00 PM](https://user-images.githubusercontent.com/35195176/145679501-ea644be4-d536-4fb0-820d-93248fd20e4d.png)
 
 
 
