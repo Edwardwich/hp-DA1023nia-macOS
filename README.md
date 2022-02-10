@@ -39,18 +39,18 @@
 - `CPUFriend.kext`
 - `CPUFriendDataProvider.kext`
 - `CPUFriend.kext`(and`CPUFriendDataProvider.kext`for improve battery)
-- `CtlnaAHCIPort.kext`
+- `NVMeFix.kext`
 - `HibernationFixup.kext`
 - `RestrictEvents.kext`
 - `VoodooPS2Controller.kext`
 - `BrightnessKeys.kext`
-- `VoodooRMI.kext`
-- `VoodooSMBus.kext`
+- `VoodooI2C.kext`
 - `AirportItlwm.kext`
 - `BlueToolFixup.kext`
 - `IntelBluetoothFirmware.kext` 
 - `HoRNDIS.kext`
 - `RealtekRTL8111.kext`
+- `VerbStub`
 - `USBInjectAll.kext`(`USBPorts.kext`usb mapping) 
  
 </details> 
