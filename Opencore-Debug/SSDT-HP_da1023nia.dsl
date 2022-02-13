@@ -1,49 +1,79 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20180427 (64-bit version)(RM)
- * Copyright (c) 2000 - 2018 Intel Corporation
+ * AML/ASL+ Disassembler version 20200925 (64-bit version)
+ * Copyright (c) 2000 - 2020 Intel Corporation
  * 
- * Disassembling to non-symbolic legacy ASL operators
+ * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLD88izM.aml, Sun Dec  5 18:19:16 2021
+ * Disassembly of iASLOYnNx8.aml, Mon Feb 14 03:02:01 2022
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000004B4 (1204)
+ *     Length           0x00000546 (1350)
  *     Revision         0x02
- *     Checksum         0x25
+ *     Checksum         0x01
  *     OEM ID           "hack"
  *     OEM Table ID     "HackLife"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20210331 (539034417)
+ *     Compiler Version 0x20200925 (538970405)
  */
 DefinitionBlock ("", "SSDT", 2, "hack", "HackLife", 0x00000000)
 {
-    External (_SB_.AWAC._STA, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.GFX0, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.LPCB, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.LPCB.ACAD, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.LPCB.PS2K, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.LPCB.RTC_._STA, UnknownObj)    // (from opcode)
-    External (_SB_.PR00, ProcessorObj)    // (from opcode)
-    External (HPTE, FieldUnitObj)    // (from opcode)
-    External (XPRW, MethodObj)    // 2 Arguments (from opcode)
+    External (_SB_.AWAC._STA, UnknownObj)
+    External (_SB_.PCI0, DeviceObj)
+    External (_SB_.PCI0.GFX0, DeviceObj)
+    External (_SB_.PCI0.LPCB, DeviceObj)
+    External (_SB_.PCI0.LPCB.ACAD, DeviceObj)
+    External (_SB_.PCI0.LPCB.PS2K, DeviceObj)
+    External (_SB_.PCI0.LPCB.RTC_._STA, UnknownObj)
+    External (_SB_.PCI0.RP05.PXSX._OFF, MethodObj)    // 0 Arguments
+    External (_SB_.PR00, ProcessorObj)
+    External (HPTE, FieldUnitObj)
+    External (XPRW, MethodObj)    // 2 Arguments
 
     Scope (\)
     {
         If (_OSI ("Darwin"))
         {
-            Store (Zero, \_SB.AWAC._STA)
-            Store (0x0F, \_SB.PCI0.LPCB.RTC._STA)
-            Store (Zero, HPTE)
+            \_SB.AWAC._STA = Zero
+            \_SB.PCI0.LPCB.RTC._STA = 0x0F
+            HPTE = Zero
         }
 
         Scope (_SB)
         {
             Scope (PCI0)
             {
+                Device (DGPU)
+                {
+                    Name (_HID, "DGPU1000")  // _HID: Hardware ID
+                    Method (_INI, 0, NotSerialized)  // _INI: Initialize
+                    {
+                        _OFF ()
+                    }
+
+                    Method (_OFF, 0, NotSerialized)  // _OFF: Power Off
+                    {
+                        If (CondRefOf (\_SB.PCI0.RP05.PXSX._OFF))
+                        {
+                            \_SB.PCI0.RP05.PXSX._OFF ()
+                        }
+                    }
+
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (0x0F)
+                        }
+                        Else
+                        {
+                            Return (Zero)
+                        }
+                    }
+                }
+
                 Device (GAUS)
                 {
                     Name (_ADR, 0x00080000)  // _ADR: Address
@@ -97,7 +127,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "HackLife", 0x00000000)
 
                     Device (ALS0)
                     {
-                        Name (_HID, "ACPI0008")  // _HID: Hardware ID
+                        Name (_HID, "ACPI0008" /* Ambient Light Sensor Device */)  // _HID: Hardware ID
                         Name (_CID, "smc-als")  // _CID: Compatible ID
                         Name (_ALI, 0x012C)  // _ALI: Ambient Light Illuminance
                         Name (_ALR, Package (0x01)  // _ALR: Ambient Light Response
@@ -245,11 +275,11 @@ DefinitionBlock ("", "SSDT", 2, "hack", "HackLife", 0x00000000)
                 {
                     Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
                     {
-                        If (LNot (Arg2))
+                        If (!Arg2)
                         {
                             Return (Buffer (One)
                             {
-                                 0x03                                           
+                                 0x03                                             // .
                             })
                         }
 
@@ -267,11 +297,11 @@ DefinitionBlock ("", "SSDT", 2, "hack", "HackLife", 0x00000000)
                 Name (_ADR, Zero)  // _ADR: Address
                 Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
                 {
-                    If (LEqual (Arg2, Zero))
+                    If ((Arg2 == Zero))
                     {
                         Return (Buffer (One)
                         {
-                             0x03                                           
+                             0x03                                             // .
                         })
                     }
 
@@ -299,7 +329,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "HackLife", 0x00000000)
 
             Device (SLPB)
             {
-                Name (_HID, EisaId ("PNP0C0E"))  // _HID: Hardware ID
+                Name (_HID, EisaId ("PNP0C0E") /* Sleep Button Device */)  // _HID: Hardware ID
                 Method (_STA, 0, NotSerialized)  // _STA: Status
                 {
                     If (_OSI ("Darwin"))
@@ -316,13 +346,13 @@ DefinitionBlock ("", "SSDT", 2, "hack", "HackLife", 0x00000000)
 
         Method (XOSI, 1, NotSerialized)
         {
-            Store (Package (0x14)
+            Local0 = Package (0x14)
                 {
                     "Windows 2012"
-                }, Local0)
+                }
             If (_OSI ("Darwin"))
             {
-                Return (LNotEqual (Ones, Match (Local0, MEQ, Arg0, MTR, Zero, Zero)))
+                Return ((Ones != Match (Local0, MEQ, Arg0, MTR, Zero, Zero)))
             }
             Else
             {
@@ -334,7 +364,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "HackLife", 0x00000000)
         {
             If (_OSI ("Darwin"))
             {
-                If (LEqual (0x6D, Arg0))
+                If ((0x6D == Arg0))
                 {
                     Return (Package (0x02)
                     {
@@ -343,7 +373,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "HackLife", 0x00000000)
                     })
                 }
 
-                If (LEqual (0x0D, Arg0))
+                If ((0x0D == Arg0))
                 {
                     Return (Package (0x02)
                     {
