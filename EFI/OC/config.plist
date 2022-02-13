@@ -297,18 +297,18 @@
                     <data>pT4AAA==</data>
                     <key>enable-backlight-registers-fix</key>
                     <data>AQAAAA==</data>
-                    <key>enable-hdmi20</key>
-                    <data>AQAAAA==</data>
-                    <key>enable-lspcon-support</key>
+                    <key>enable-hdmi-dividers-fix</key>
                     <data>AQAAAA==</data>
                     <key>force-online</key>
                     <data>AQAAAA==</data>
-                    <key>framebuffer-con1-alldata</key>
-                    <data>AQEJAAAIAADHAQAAAgYKAAAEAADHAQAA</data>
+                    <key>framebuffer-con1-busid</key>
+                    <data>AQAAAA==</data>
                     <key>framebuffer-con1-enable</key>
                     <data>AQAAAA==</data>
-                    <key>framebuffer-con1-has-lspcon</key>
-                    <data>AQAAAA==</data>
+                    <key>framebuffer-con1-pipe</key>
+                    <data>EgAAAA==</data>
+                    <key>framebuffer-con1-type</key>
+                    <data>AAgAAA==</data>
                     <key>framebuffer-fbmem</key>
                     <data>AACQAA==</data>
                     <key>framebuffer-patch-enable</key>
@@ -317,8 +317,6 @@
                     <data>AAAwAQ==</data>
                     <key>hda-gfx</key>
                     <string>onboard-1</string>
-                    <key>igfxfw</key>
-                    <data>AgAAAA==</data>
                     <key>model</key>
                     <string>Intel Iris Plus Graphics 655</string>
                 </dict>
@@ -354,7 +352,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.5.9</string>
+                    <string>V1.6.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -372,7 +370,7 @@
                     <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.8</string>
+                    <string>V1.2.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -388,13 +386,31 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>SMCBatteryManager.kext</string>
+                    <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.8</string>
+                    <string>V1.2.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/SMCBatteryManager</string>
+                    <string>Contents/MacOS/SMCProcessor</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>BundlePath</key>
+                    <string>ACPIBatteryManager.kext</string>
+                    <key>Comment</key>
+                    <string>V1.90.2</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/ACPIBatteryManager</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -408,7 +424,7 @@
                     <key>BundlePath</key>
                     <string>SMCLightSensor.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.8</string>
+                    <string>V1.2.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -424,27 +440,9 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>SMCProcessor.kext</string>
-                    <key>Comment</key>
-                    <string>V1.2.8</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/SMCProcessor</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.5.6</string>
+                    <string>V1.5.7</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -462,7 +460,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.8</string>
+                    <string>V1.6.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -476,7 +474,7 @@
                 </dict>
                 <dict>
                     <key>Arch</key>
-                    <string>x86_64</string>
+                    <string>Any</string>
                     <key>BundlePath</key>
                     <string>CPUFriend.kext</string>
                     <key>Comment</key>
@@ -552,7 +550,7 @@
                     <key>BundlePath</key>
                     <string>RestrictEvents.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.6</string>
+                    <string>V1.0.7</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -895,7 +893,7 @@
                 <key>ThirdPartyDrives</key>
                 <false/>
                 <key>XhciPortLimit</key>
-                <true/>
+                <false/>
             </dict>
             <key>Scheme</key>
             <dict>
@@ -1010,16 +1008,18 @@
                 </dict>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
+                    <key>EnableTRIM</key>
+                    <data>AQ==</data>
                     <key>ForceDisplayRotationInEFI</key>
                     <integer>0</integer>
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>-wegnoegpu igfxagdc=0 itlwm_cc=US</string>
+                    <string>igfxagdc=0 itlwm_cc=US</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
-                    <data>ZW4tVVM6MA==</data>
+                    <string>en-US:0</string>
                     <key>run-efi-updater</key>
                     <string>No</string>
                 </dict>
@@ -1164,7 +1164,7 @@
                 <key>AudioOutMask</key>
                 <integer>1</integer>
                 <key>AudioSupport</key>
-                <true/>
+                <false/>
                 <key>DisconnectHda</key>
                 <false/>
                 <key>MaximumGain</key>
@@ -1212,37 +1212,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>AudioDxe.efi</string>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
                     <string>OpenCanopy.efi</string>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>OpenLinuxBoot.efi</string>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>ext4_x64.efi</string>
                 </dict>
             </array>
             <key>Input</key>
