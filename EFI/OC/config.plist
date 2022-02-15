@@ -294,7 +294,7 @@
                     <key>AAPL,GfxYTile</key>
                     <data>AQAAAA==</data>
                     <key>device-id</key>
-                    <data>pT4AAA==</data>
+                    <data>mz4AAA==</data>
                     <key>enable-backlight-registers-fix</key>
                     <data>AQAAAA==</data>
                     <key>enable-hdmi-dividers-fix</key>
@@ -317,8 +317,6 @@
                     <data>AAAwAQ==</data>
                     <key>hda-gfx</key>
                     <string>onboard-1</string>
-                    <key>model</key>
-                    <string>Intel Iris Plus Graphics 655</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x4,0x0)</key>
                 <dict>
