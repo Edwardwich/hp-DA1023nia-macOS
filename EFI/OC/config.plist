@@ -143,7 +143,7 @@
                 <key>SignalAppleOS</key>
                 <false/>
                 <key>SyncRuntimePermissions</key>
-                <false/>
+                <true/>
             </dict>
         </dict>
         <key>DeviceProperties</key>
@@ -153,7 +153,7 @@
                 <key>PciRoot(0x0)/Pci(0x0,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,0,0</string>
                     <key>device_type</key>
                     <string>Host bridge</string>
                     <key>model</key>
@@ -162,52 +162,52 @@
                 <key>PciRoot(0x0)/Pci(0x12,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,18,0</string>
                     <key>device_type</key>
                     <string>Signal processing controller</string>
                     <key>model</key>
-                    <string>Intel Corporation, Series Chipset PCH Thermal Controller</string>
+                    <string>Cannon Point-LP Thermal Controller</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x14,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,20,0</string>
                     <key>device_type</key>
                     <string>USB controller</string>
                     <key>model</key>
-                    <string>Intel 8 Series Chipset Family USB xHCI Host Controller</string>
+                    <string>Cannon Point-LP USB 3.1 xHCI Controller</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x14,0x2)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,20,2</string>
                     <key>device_type</key>
                     <string>RAM memory</string>
                     <key>model</key>
-                    <string>Intel Corporation, Series Chipset Shared SRAM</string>
+                    <string>Cannon Point-LP Shared SRAM</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x16,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,22,0</string>
                     <key>device_type</key>
-                    <string>IMEI Controller</string>
+                    <string>Communication controller</string>
                     <key>model</key>
-                    <string>Intel Corporation, Series Chipset IMEI Controller</string>
+                    <string>Cannon Point-LP MEI Controller #1</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x17,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,23,0</string>
                     <key>device_type</key>
                     <string>RAID bus controller</string>
                     <key>model</key>
-                    <string>Intel Corporation, Series Chipset SATA Controller</string>
+                    <string>82801 Mobile SATA Controller [RAID mode]</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,28,0</string>
                     <key>device_type</key>
                     <string>PCI bridge</string>
                     <key>model</key>
@@ -216,7 +216,7 @@
                 <key>PciRoot(0x0)/Pci(0x1D,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,29,0</string>
                     <key>device_type</key>
                     <string>PCI bridge</string>
                     <key>model</key>
@@ -225,16 +225,16 @@
                 <key>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,29,0/0,0</string>
                     <key>device_type</key>
                     <string>Ethernet controller</string>
                     <key>model</key>
-                    <string>RTL8111 PCI Express Gigabit Ethernet Controller</string>
+                    <string>RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1D,0x1)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,29,1</string>
                     <key>device_type</key>
                     <string>PCI bridge</string>
                     <key>model</key>
@@ -243,7 +243,7 @@
                 <key>PciRoot(0x0)/Pci(0x1D,0x1)/Pci(0x0,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,29,1/0,0</string>
                     <key>device_type</key>
                     <string>Network controller</string>
                     <key>model</key>
@@ -252,7 +252,7 @@
                 <key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,31,0</string>
                     <key>device_type</key>
                     <string>ISA bridge</string>
                     <key>model</key>
@@ -261,46 +261,54 @@
                 <key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,31,3</string>
                     <key>device_type</key>
                     <string>Audio device</string>
                     <key>hda-gfx</key>
                     <string>onboard-1</string>
                     <key>layout-id</key>
-                    <integer>3</integer>
+                    <integer>14</integer>
                     <key>model</key>
-                    <string>Apple High Definition Audio Controller</string>
+                    <string>Cannon Point-LP High Definition Audio Controller</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,31,4</string>
                     <key>device_type</key>
                     <string>SMBus</string>
                     <key>model</key>
-                    <string>Intel Corporation, Series Chipset SMBus Controller</string>
+                    <string>Cannon Point-LP SMBus Controller</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x5)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,31,5</string>
                     <key>device_type</key>
                     <string>Serial bus controller</string>
                     <key>model</key>
-                    <string>Intel Corporation, Series Chipset SPI Controller</string>
+                    <string>Cannon Point-LP SPI Controller</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
-                    <key>AAPL,GfxYTile</key>
+                    <key>AAPL,GfxYTile-1</key>
                     <data>AQAAAA==</data>
+                    <key>AAPL,ig-platform-id</key>
+                    <data>CQCbPg==</data>
                     <key>device-id</key>
                     <data>mz4AAA==</data>
                     <key>enable-backlight-registers-fix</key>
                     <data>AQAAAA==</data>
-                    <key>enable-hdmi-dividers-fix</key>
-                    <data>AQAAAA==</data>
                     <key>force-online</key>
                     <data>AQAAAA==</data>
+                    <key>framebuffer-patch-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-portcount</key>
+                    <data>AgAAAA==</data>
+                    <key>framebuffer-con0-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con0-pipe</key>
+                    <data>EgAAAA==</data>
                     <key>framebuffer-con1-busid</key>
                     <data>AQAAAA==</data>
                     <key>framebuffer-con1-enable</key>
@@ -311,30 +319,30 @@
                     <data>AAgAAA==</data>
                     <key>framebuffer-fbmem</key>
                     <data>AACQAA==</data>
-                    <key>framebuffer-patch-enable</key>
-                    <data>AQAAAA==</data>
                     <key>framebuffer-stolenmem</key>
                     <data>AAAwAQ==</data>
                     <key>hda-gfx</key>
                     <string>onboard-1</string>
+                    <key>model</key>
+                    <string>Intel Iris Plus Graphics 645</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x4,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,4,0</string>
                     <key>device_type</key>
                     <string>Signal processing controller</string>
                     <key>model</key>
-                    <string>Intel Corporation, Series Chipset Core Processor Thermal Subsystem</string>
+                    <string>Series Chipset Core Processor Thermal Subsystem</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x8,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Built In</string>
+                    <string>Internal@0,8,0</string>
                     <key>device_type</key>
                     <string>System peripheral</string>
                     <key>model</key>
-                    <string>Intel Corporation, Series Chipset Gaussian Mixture Model</string>
+                    <string>Series Chipset Gaussian Mixture Model</string>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -440,7 +448,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.5.7</string>
+                    <string>V1.5.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -528,24 +536,6 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>HibernationFixup.kext</string>
-                    <key>Comment</key>
-                    <string>V1.4.6</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/HibernationFixup</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
                     <string>RestrictEvents.kext</string>
                     <key>Comment</key>
                     <string>V1.0.7</string>
@@ -564,9 +554,27 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>HibernationFixup.kext</string>
+                    <key>Comment</key>
+                    <string>V1.4.6</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/HibernationFixup</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.7</string>
+                    <string>V2.2.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -584,7 +592,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.7</string>
+                    <string>V2.2.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -602,7 +610,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.7</string>
+                    <string>V2.2.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -620,7 +628,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.7</string>
+                    <string>V2.2.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -728,7 +736,7 @@
                     <key>BundlePath</key>
                     <string>AirportItlwm.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0</string>
+                    <string>V2.1.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1084,7 +1092,7 @@
                 <key>AdviseFeatures</key>
                 <true/>
                 <key>MLB</key>
-                <string>C02840306CDJH4RUE</string>
+                <string>FVF935902J900008C</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
@@ -1096,11 +1104,11 @@
                 <key>SystemMemoryStatus</key>
                 <string>Upgradable</string>
                 <key>SystemProductName</key>
-                <string>MacBookPro15,2</string>
+                <string>MacBookPro15,4</string>
                 <key>SystemSerialNumber</key>
-                <string>C02XH0C9JHCC</string>
+                <string>FVFZ90REL40Y</string>
                 <key>SystemUUID</key>
-                <string>8AE65FDF-31EE-4EB8-8252-CF17357373D0</string>
+                <string>B12E0E00-5B11-41ED-8A55-FAA9D2C7EA7A</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
