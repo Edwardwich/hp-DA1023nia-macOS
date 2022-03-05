@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<payload>
+   <element name="Application" type="Description" sequence-id="1">
+      <attribute name="a0" value="HPAdvSysDiag_Battery"/>
+      <attribute name="a1" value="7.6.2.0"/>
+      <attribute name="a2" value="2"/>
+      <attribute name="p1" value="02/03/2021"/>
+      <attribute name="p2" value="F.36"/>
+      <attribute name="p3" value="70.38"/>
+      <attribute name="p5" value=""/>
+      <attribute name="p15" value="2"/>
+      <attribute name="p16" value="0"/>
+      <attribute name="p17" value="0"/>
+      <attribute name="p20" value="00000003"/>
+      <attribute name="p4" value="1"/>
+      <attribute name="p500" value="0"/>
+      <attribute name="p501" value="1"/>
+      <attribute name="p502" value="FBYTE#3K3Q3Y6E6a7K7P7W7d7jawbCbhcbfP.54"/>
+      <attribute name="p503" value=""/>
+      <attribute name="p530" value="0"/>
+      <attribute name="p531" value="0"/>
+      <attribute name="p0" value="2022-03-05 12:20:08"/>
+      <attribute name="p10" value="0"/>
+      <attribute name="z65" value="1"/>
+      <attribute name="z66" value="1"/>
+      <attribute name="Z67" value="1"/>
+      <attribute name="d1" value="11"/>
+      <attribute name="a4" value="00.00.00.03"/>
+      <attribute name="d0" value="1"/>
+   </element>
+</payload>
