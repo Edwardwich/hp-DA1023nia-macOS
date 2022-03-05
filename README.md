@@ -11,6 +11,8 @@
 | Integrated Graphics | Intel UHD Graphics 620       |
 | Sound Card          | Realtek ALC236 (layout-id: `3` or `14`) |
 | Wireless Card       | RTL8821CE Replaced with(`Intel Wireless N-7265`)      |
+| ssd       | SanDisk SD9SN8W-128G-1006      |
+
 
 
 
