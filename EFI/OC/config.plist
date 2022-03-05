@@ -25,13 +25,13 @@
                     <key>BaseSkip</key>
                     <integer>0</integer>
                     <key>Comment</key>
-                    <string>Rename _OSI to XOSI (OS)</string>
+                    <string>EC0: SBTC to XSBT</string>
                     <key>Count</key>
                     <integer>0</integer>
                     <key>Enabled</key>
                     <true/>
                     <key>Find</key>
-                    <data>X09TSQ==</data>
+                    <data>JlNCVEM=</data>
                     <key>Limit</key>
                     <integer>0</integer>
                     <key>Mask</key>
@@ -39,7 +39,7 @@
                     <key>OemTableId</key>
                     <data></data>
                     <key>Replace</key>
-                    <data>WE9TSQ==</data>
+                    <data>JlhTQlQ=</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -47,7 +47,67 @@
                     <key>TableLength</key>
                     <integer>0</integer>
                     <key>TableSignature</key>
+                    <data>RFNEVA==</data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>EC0: GBTC to XGBT</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>QiBHQlRD</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
                     <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>QiBYR0JU</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data>RFNEVA==</data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>EC0: GBTI to XBTI</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>XxRFQkdCVEk=</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>XxRFQlhCVEk=</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data>RFNEVA==</data>
                 </dict>
                 <dict>
                     <key>Base</key>
@@ -70,6 +130,36 @@
                     <data></data>
                     <key>Replace</key>
                     <data>WFBSVwI=</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data></data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>change _OSI to XOSI</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>X09TSQ==</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>WE9TSQ==</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -291,40 +381,42 @@
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
-                    <key>AAPL,GfxYTile-1</key>
+                    <key>AAPL,GfxYTile</key>
                     <data>AQAAAA==</data>
                     <key>AAPL,ig-platform-id</key>
                     <data>CQCbPg==</data>
+                    <key>AAPL00,override-no-connect</key>
+                    <data>AP///////wAJ5aUGAAAAAAEZAQSVIhN4CiQQl1lUjiceUFQAAAABAQEBAQEBAQEBAQEBAQEByBtWZVAAKDAwIEQAWMIQAAAahBdWgFEAXDBkZEQFWMIQAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAMPeMNPG4NDhlzAAAAALY=</data>
+                    <key>backlight-smoother-interval</key>
+                    <data>BwAAAA==</data>
+                    <key>backlight-smoother-steps</key>
+                    <data>IwAAAA==</data>
+                    <key>backlight-smoother-threshold</key>
+                    <data>LAEAAA==</data>
                     <key>device-id</key>
                     <data>mz4AAA==</data>
                     <key>enable-backlight-registers-fix</key>
                     <data>AQAAAA==</data>
+                    <key>enable-backlight-smoother</key>
+                    <data>AQAAAA==</data>
                     <key>force-online</key>
                     <data>AQAAAA==</data>
-                    <key>framebuffer-patch-enable</key>
-                    <data>AQAAAA==</data>
-                    <key>framebuffer-portcount</key>
-                    <data>AgAAAA==</data>
-                    <key>framebuffer-con0-enable</key>
-                    <data>AQAAAA==</data>
-                    <key>framebuffer-con0-pipe</key>
-                    <data>EgAAAA==</data>
                     <key>framebuffer-con1-busid</key>
                     <data>AQAAAA==</data>
                     <key>framebuffer-con1-enable</key>
                     <data>AQAAAA==</data>
-                    <key>framebuffer-con1-pipe</key>
-                    <data>EgAAAA==</data>
                     <key>framebuffer-con1-type</key>
                     <data>AAgAAA==</data>
                     <key>framebuffer-fbmem</key>
                     <data>AACQAA==</data>
+                    <key>framebuffer-patch-enable</key>
+                    <data>AQAAAA==</data>
                     <key>framebuffer-stolenmem</key>
                     <data>AAAwAQ==</data>
                     <key>hda-gfx</key>
                     <string>onboard-1</string>
-                    <key>model</key>
-                    <string>Intel Iris Plus Graphics 645</string>
+                    <key>igfxfw</key>
+                    <integer>2000000</integer>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x4,0x0)</key>
                 <dict>
@@ -664,7 +756,7 @@
                     <key>BundlePath</key>
                     <string>VoodooRMI.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.5</string>
+                    <string>V1.3.4</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -736,7 +828,7 @@
                     <key>BundlePath</key>
                     <string>AirportItlwm.kext</string>
                     <key>Comment</key>
-                    <string>V2.1.0</string>
+                    <string>V2.2.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -788,13 +880,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>USBPorts.kext</string>
+                    <string>RealtekRTL8111.kext</string>
                     <key>Comment</key>
-                    <string>V1.0</string>
+                    <string>V2.4.2</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string></string>
+                    <string>Contents/MacOS/RealtekRTL8111</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -806,13 +898,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>RealtekRTL8111.kext</string>
+                    <string>USBPorts.kext</string>
                     <key>Comment</key>
-                    <string>V2.4.2</string>
+                    <string>V1.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/RealtekRTL8111</string>
+                    <string></string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -966,7 +1058,26 @@
                 <integer>3</integer>
             </dict>
             <key>Entries</key>
-            <array/>
+            <array>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Auxiliary</key>
+                    <true/>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Flavour</key>
+                    <string>Auto</string>
+                    <key>Name</key>
+                    <string>SystemDiags</string>
+                    <key>Path</key>
+                    <string>PciRoot(0x0)/Pci(0x17,0x0)/Sata(0x4,0x8000,0x0)/HD(1,GPT,C457FA7D-AA57-4962-B04B-51FAE43533E2, 0x28, 0x64000)/\EFI\HP\SystemDiags\SysDiags.efi</string>
+                    <key>TextMode</key>
+                    <true/>
+                </dict>
+            </array>
             <key>Security</key>
             <dict>
                 <key>AllowNvramReset</key>
@@ -1025,7 +1136,7 @@
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
-                    <string>en-US:0</string>
+                    <string>en_US:0</string>
                     <key>run-efi-updater</key>
                     <string>No</string>
                 </dict>
@@ -1092,7 +1203,7 @@
                 <key>AdviseFeatures</key>
                 <true/>
                 <key>MLB</key>
-                <string>FVF935902J900008C</string>
+                <string>FVF002200CD0000UE</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
@@ -1106,9 +1217,9 @@
                 <key>SystemProductName</key>
                 <string>MacBookPro15,4</string>
                 <key>SystemSerialNumber</key>
-                <string>FVFZ90REL40Y</string>
+                <string>FVFC3CYUL40Y</string>
                 <key>SystemUUID</key>
-                <string>B12E0E00-5B11-41ED-8A55-FAA9D2C7EA7A</string>
+                <string>D4933A58-C7C9-4688-B9E5-205EF7B59899</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
