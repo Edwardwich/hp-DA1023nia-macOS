@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLOYnNx8.aml, Mon Feb 14 03:02:01 2022
+ * Disassembly of iASLrDeTeJ.aml, Sat Mar  5 17:12:47 2022
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000546 (1350)
+ *     Length           0x0000053B (1339)
  *     Revision         0x02
- *     Checksum         0x01
+ *     Checksum         0x9D
  *     OEM ID           "hack"
  *     OEM Table ID     "HackLife"
  *     OEM Revision     0x00000000 (0)
@@ -49,11 +49,6 @@ DefinitionBlock ("", "SSDT", 2, "hack", "HackLife", 0x00000000)
                 {
                     Name (_HID, "DGPU1000")  // _HID: Hardware ID
                     Method (_INI, 0, NotSerialized)  // _INI: Initialize
-                    {
-                        _OFF ()
-                    }
-
-                    Method (_OFF, 0, NotSerialized)  // _OFF: Power Off
                     {
                         If (CondRefOf (\_SB.PCI0.RP05.PXSX._OFF))
                         {
