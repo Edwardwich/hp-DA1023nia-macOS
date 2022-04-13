@@ -8,16 +8,9 @@
         <integer>2533</integer>
         <key>DisplayProductName</key>
         <string>Built-in Retina Display</string>
-        <key>IODisplayEDID</key>
-        <data>AP///////wAJ5aUGAAAAAAEZAQSVIhN4CiQQl1lUjiceUFQAAAABAQEBAQEBAQEBAQEBAQEByBtWZVAAKDAwIEQAWMIQAAAahBdWgFEAXDBkZEQFWMIQAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAMPeMNPG4NDhlzAAAAALY=</data>
         <key>scale-resolutions</key>
         <array>
             <data>AAAKrAAABgAAAAAB</data>
-            <data>AAAKgAAABegAAAAB</data>
-            <data>AAAKAAAABaAAAAAB</data>
-            <data>AAAKrAAABgAAAAAJAKAAAA==</data>
-            <data>AAAKgAAABegAAAAJAKAAAA==</data>
-            <data>AAAKAAAABaAAAAAJAKAAAA==</data>
         </array>
         <key>target-default-ppmm</key>
         <real>10.0699301</real>
