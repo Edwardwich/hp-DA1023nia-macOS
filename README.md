@@ -32,6 +32,20 @@
 </details> 
 
 <details>  
+<summary> EmbeddedControllers：</summary> 
+
+### HP DA1023nia (`generic`)
+
+- `ec-device` = `generic`
+- `fan-count` = `1`
+- `fan0-addr` = `0xB2`
+- `fan0-size` = `2`
+- `fan0-div` = `11`
+- `fan0-mul` = `F0`
+- `fan0-big` = `2` 
+</details> 
+
+<details>  
 <summary> Kexts：</summary>
  
 - `Lilu.kext`
