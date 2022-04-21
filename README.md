@@ -38,11 +38,11 @@
 
 - `ec-device` = `generic`
 - `fan-count` = `1`
-- `fan0-addr` = `0xB2`
-- `fan0-size` = `2`
-- `fan0-div` = `11`
-- `fan0-mul` = `F0`
-- `fan0-big` = `2` 
+- `fan0-addr` = `0x11`
+- `fan0-size` = `1`
+- `fan0-div` = `4`
+- `fan0-mul` = `FF`
+- `fan0-big` = `0` 
 </details> 
 
 <details>  
