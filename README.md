@@ -32,17 +32,17 @@
 </details> 
 
 <details>  
-<summary> EmbeddedControllers：</summary> 
+<summary> FAN：</summary> 
 
 ### HP DA1023nia (`generic`)
 
 - `ec-device` = `generic`
 - `fan-count` = `1`
 - `fan0-addr` = `0x11`
-- `fan0-size` = `1`
-- `fan0-div` = `4`
-- `fan0-mul` = `FF`
-- `fan0-big` = `0` 
+- `fan0-size` = `0x01`
+- `fan0-div` = `0x06`
+- `fan0-mul` = `0xF0`
+- `fan0-big` = `0x00` 
 </details> 
 
 <details>  
@@ -99,8 +99,6 @@
 ![Screen Shot 2022-02-13 at 02 27 53](https://user-images.githubusercontent.com/35195176/153767408-b089c545-bcaa-4e02-b680-5eece949a795.png)
 
 ![Screen Shot 2022-02-13 at 02 29 42](https://user-images.githubusercontent.com/35195176/153767429-e6d24500-6208-49fb-86d8-b13702954898.png)
-
-![Screen Shot 2022-04-18 at 18 52 07](https://user-images.githubusercontent.com/35195176/163821838-964e6696-4716-49c3-84c5-0f779d9ce7b3.png)
 
 
 
