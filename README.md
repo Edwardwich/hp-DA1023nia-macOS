@@ -40,8 +40,8 @@
 - `fan-count` = `1`
 - `fan0-addr` = `0x11`
 - `fan0-size` = `0x01`
-- `fan0-div` = `0x06`
-- `fan0-mul` = `0xF0`
+- `fan0-div` = `0x03`
+- `fan0-mul` = `0x96`
 - `fan0-big` = `0x00` 
 </details> 
 
