@@ -264,9 +264,9 @@
                     <key>fan0-big</key>
                     <data>AAAAAA==</data>
                     <key>fan0-div</key>
-                    <data>BgAAAA==</data>
+                    <data>AwAAAA==</data>
                     <key>fan0-mul</key>
-                    <data>8AAAAA==</data>
+                    <data>lgAAAA==</data>
                     <key>fan0-size</key>
                     <data>AQAAAA==</data>
                     <key>model</key>
@@ -324,10 +324,6 @@
                     <key>enable-backlight-registers-fix</key>
                     <data>AQAAAA==</data>
                     <key>enable-backlight-smoother</key>
-                    <data>AQAAAA==</data>
-                    <key>enable-hdmi-dividers-fix</key>
-                    <data>AQAAAA==</data>
-                    <key>enable-hdmi20</key>
                     <data>AQAAAA==</data>
                     <key>force-online</key>
                     <data>AQAAAA==</data>
@@ -454,13 +450,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>SMCLightSensor.kext</string>
+                    <string>SMCSuperIO.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.9</string>
+                    <string>V1.3.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/SMCLightSensor</string>
+                    <string>Contents/MacOS/SMCSuperIO</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -472,13 +468,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>SMCSuperIO.kext</string>
+                    <string>SMCLightSensor.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.0</string>
+                    <string>V1.2.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/SMCSuperIO</string>
+                    <string>Contents/MacOS/SMCLightSensor</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
