@@ -43,7 +43,6 @@
 - `fan0-div` = `0x03`
 - `fan0-mul` = `0x96`
 - `fan0-big` = `0x00` 
-<details>
  <summary>Spoiler: EC RAM details</summary>
 	`OperationRegion (ECMM, SystemMemory, 0xFC7E0800, 0x1000)
             Field (ECMM, AnyAcc, Lock, Preserve)
