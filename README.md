@@ -44,7 +44,9 @@
 - `fan0-mul` = `0x96`
 - `fan0-big` = `0x00` 
  <summary>Spoiler: EC RAM details</summary>
-	`OperationRegion (ECMM, SystemMemory, 0xFC7E0800, 0x1000)
+	
+	 ```ASL
+	OperationRegion (ECMM, SystemMemory, 0xFC7E0800, 0x1000)
             Field (ECMM, AnyAcc, Lock, Preserve)
             {
                 REC1,   8, 
@@ -323,7 +325,7 @@
                 CPUU,   8, 
                 EXTS,   8, 
                 Offset (0x3C1)
-            }`
+            }
  </details>
 <details>  
 <summary> Kexts：</summary>
