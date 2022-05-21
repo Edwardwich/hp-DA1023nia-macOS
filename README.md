@@ -327,7 +327,7 @@
                 Offset (0x3C1)
             }
  </details>
-<details>  
+</details>  
 <summary> Kexts：</summary>
  
 - `Lilu.kext`
