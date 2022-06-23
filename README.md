@@ -20,8 +20,7 @@
 ## MacOS Versions Supported:
 
 - macOS Monterey 12.3 (21E258)
-
-
+- macOS Ventura Beta 2 (22A5286j)
 ## Config & SSDT & Kexts :
 
 <details>  
@@ -338,7 +337,6 @@
 - `CPUFriend.kext`
 - `CPUFriendDataProvider.kext`
 - `CPUFriend.kext`(and`CPUFriendDataProvider.kext`for improve battery)
-- `CtlnaAHCIPort.kext`
 - `HibernationFixup.kext`
 - `RestrictEvents.kext`
 - `VoodooPS2Controller.kext`
