@@ -401,7 +401,7 @@
 - [@Baio1977](https://github.com/Baio1977) He made efi folder and ssdt
 
 
-- [@Lorys89](https://github.com/Lorys89) fix SSDT-PNLF for whiskey lake 8265u and ssdt
+- [@Lorys89](https://github.com/Lorys89) for fix bios problem with RU.efi
 
  
 - [@zxystd](https://github.com/OpenIntelWireless/itlwm) created kexts of wifi and bluetooth  
