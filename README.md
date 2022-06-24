@@ -19,8 +19,9 @@
 
 ## MacOS Versions Supported:
 
-- macOS Monterey 12.3 (21E258)
 - macOS Ventura Beta 2 (22A5286j)
+- macOS Monterey 12.3 (21E258)
+
 ## Config & SSDT & Kexts :
 
 <details>  
