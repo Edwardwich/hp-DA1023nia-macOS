@@ -25,6 +25,16 @@
 ## Config & SSDT & Kexts :
 
 <details>  
+<summary> Bios settings for Bios Version F.38：</summary> 
+
+- `Intel SGX`
+- `cfg lock and DVMT: DO AT YOUR OWN RISK!!! It may brick your laptop`
+- `Raid to AHCI`
+ 
+</details> 
+
+
+<details>  
 <summary> APCI：</summary> 
 
 - `SSDT-HP_da1023nia`
