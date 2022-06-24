@@ -383,9 +383,7 @@
  
 
 ## Screen Shot
-
-![Screen Shot 2022-06-08 at 12 00 02 AM](https://user-images.githubusercontent.com/35195176/172466397-bc06f5a4-d32d-42cb-a5d4-2c03127b5dc0.png)
-
+![Screenshot 2022-06-24 at 12 52 25](https://user-images.githubusercontent.com/35195176/175495153-bfc369cb-582a-4791-aabd-6c8111af25e9.png)
 
 ![Screen Shot 2022-02-19 at 17 53 11](https://user-images.githubusercontent.com/35195176/154846950-0b1d1040-4f00-4fba-9995-d1a110a42d50.png)
 
