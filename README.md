@@ -28,7 +28,14 @@
 <summary> Bios settings for Bios Version F.38：</summary> 
 
 - `Intel SGX`
+0x3E 0x0. CpuSetup:
+![1657541865733](https://user-images.githubusercontent.com/35195176/178262506-0ab2083e-2ff9-40af-98e8-7d2cadef3939.jpg)
+
 - `cfg lock and DVMT: DO AT YOUR OWN RISK!!! It may brick your laptop`
+0x107 0x2 SaSetup and 0x108 0x3 SaSetup:
+![1657541771731](https://user-images.githubusercontent.com/35195176/178262566-657a0076-f9c3-4460-b2b7-13b0ac4f1e7d.jpg)
+
+
 - `Raid to AHCI`
  
 </details> 
