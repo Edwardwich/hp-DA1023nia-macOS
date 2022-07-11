@@ -355,7 +355,6 @@
 - `CPUFriend.kext`
 - `CPUFriendDataProvider.kext`
 - `NVMeFix.kext`
-- `CPUFriend.kext`(and`CPUFriendDataProvider.kext`for improve battery)
 - `HibernationFixup.kext`
 - `RestrictEvents.kext`
 - `VoodooPS2Controller.kext`
