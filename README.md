@@ -11,7 +11,7 @@
 | Integrated Graphics | Intel UHD Graphics 620       |
 | Sound Card          | Realtek ALC236 (layout-id: `3` or `14`) |
 | Wireless Card       | RTL8821CE Replaced with(`Intel Wireless N-7265`)      |
-| ssd       | SanDisk SD9SN8W-128G-1006      |
+| ssd       | Samsung SSD 980 250GB      |
 
 
 
@@ -347,6 +347,7 @@
 - `AppleALC.kext`
 - `CPUFriend.kext`
 - `CPUFriendDataProvider.kext`
+- `NVMeFix.kext`
 - `CPUFriend.kext`(and`CPUFriendDataProvider.kext`for improve battery)
 - `HibernationFixup.kext`
 - `RestrictEvents.kext`
@@ -390,6 +391,8 @@
 ![Screen Shot 2022-02-13 at 02 27 53](https://user-images.githubusercontent.com/35195176/153767408-b089c545-bcaa-4e02-b680-5eece949a795.png)
 
 ![Screen Shot 2022-02-13 at 02 29 42](https://user-images.githubusercontent.com/35195176/153767429-e6d24500-6208-49fb-86d8-b13702954898.png)
+
+![Screenshot 2022-07-11 at 4 12 45 PM](https://user-images.githubusercontent.com/35195176/178256764-51ce4184-5edd-4552-9f2d-05ac6264dcd4.png)
 
 ![Screen Shot 2022-04-28 at 22 06 50](https://user-images.githubusercontent.com/35195176/165813795-f1088b15-893f-46f2-879b-2169153cc9d2.png)
 
