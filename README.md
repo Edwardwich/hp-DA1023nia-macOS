@@ -57,10 +57,10 @@
 - `ec-device` = `generic`
 - `fan-count` = `1`
 - `fan0-addr` = `0x11`
-- `fan0-size` = `0x01`
-- `fan0-div` = `0x03`
-- `fan0-mul` = `0x96`
-- `fan0-big` = `0x00` 
+- `fan0-size` = `0x00`
+- `fan0-div` = `0x02`
+- `fan0-mul` = `0xC8`
+- `fan0-big` = `0x01` 
  <summary>Spoiler: EC RAM details</summary>
 	
 	 ```ASL
