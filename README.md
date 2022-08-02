@@ -1,6 +1,6 @@
 
 
-# HP DA1023nia Hackintosh
+# HP DA1023nia macOS
 
 
 ## Configuration
