@@ -40,7 +40,8 @@
 ![DVMT](https://user-images.githubusercontent.com/35195176/183240759-6506689a-c7f4-470d-9895-5d8876afbfe1.png)
 
 
-- `Raid to AHCI` PchSetup  0x44 to 0x00
+- `Raid to AHCI` PchSetup  0x44 to 0x00:
+	
 ![PchSetup](https://user-images.githubusercontent.com/35195176/183240796-21ccfdfe-f318-435c-8a1b-3fae4363fdf5.png)
 
  
