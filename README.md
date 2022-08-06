@@ -2,6 +2,7 @@
 
 # HP DA1023nia macOS
 
+![4668d2cd-d74a-4eda-8baa-a06a83545b7e](https://user-images.githubusercontent.com/35195176/183241772-957f7ded-736a-46aa-abb8-ee49c55d2ca5.jpeg)
 
 ## Configuration
 
