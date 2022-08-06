@@ -30,6 +30,7 @@
 
 - `Intel SGX`
 0x3E 0x0. CpuSetup:
+	
 ![CpuSetup](https://user-images.githubusercontent.com/35195176/183240746-884dad66-5633-42be-aeaa-f1b9c74e318f.png)
 
 
