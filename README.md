@@ -30,14 +30,18 @@
 
 - `Intel SGX`
 0x3E 0x0. CpuSetup:
-![1657541865733](https://user-images.githubusercontent.com/35195176/178262506-0ab2083e-2ff9-40af-98e8-7d2cadef3939.jpg)
+![CpuSetup](https://user-images.githubusercontent.com/35195176/183240746-884dad66-5633-42be-aeaa-f1b9c74e318f.png)
+
+
 
 - `cfg lock and DVMT: DO AT YOUR OWN RISK!!! It may brick your laptop`
 0x107 0x2 SaSetup and 0x108 0x3 SaSetup:
-![1657541771731](https://user-images.githubusercontent.com/35195176/178262566-657a0076-f9c3-4460-b2b7-13b0ac4f1e7d.jpg)
+![DVMT](https://user-images.githubusercontent.com/35195176/183240759-6506689a-c7f4-470d-9895-5d8876afbfe1.png)
 
 
-- `Raid to AHCI`
+- `Raid to AHCI` PchSetup  0x44 to 0x00
+![PchSetup](https://user-images.githubusercontent.com/35195176/183240796-21ccfdfe-f318-435c-8a1b-3fae4363fdf5.png)
+
  
 </details> 
 
