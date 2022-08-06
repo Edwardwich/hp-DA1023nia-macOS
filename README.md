@@ -14,7 +14,7 @@
 | LAN 		      | RTL8111                      |
 | Sound Card          | Realtek ALC236 (layout-id: `3` or `14`)           |
 | SmBios              | MacBookPro15,4(NO Serial Number)                  |
-| Wifi + Bluetooth    | RTL8821CE Replaced with(`Intel Wireless N-7265`)  |
+| Wifi + Bluetooth    | Intel Wireless N-7265.       |
 | NVME                | Samsung SSD 980 250GB(macOS)                      |
 | SATA M.2 SSD        | SanDisk SD9SN8W-128G-1006 Media(Windows)          |
 
