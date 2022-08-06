@@ -31,17 +31,23 @@
 - `Intel SGX`
 0x3E 0x0. CpuSetup:
 	
+![Screen Shot 2022-08-06 at 12 59 42](https://user-images.githubusercontent.com/35195176/183241620-8b117c92-289f-40c3-8eab-2c0dc1926ff8.png)
 ![CpuSetup](https://user-images.githubusercontent.com/35195176/183240746-884dad66-5633-42be-aeaa-f1b9c74e318f.png)
 
 
 
 - `cfg lock and DVMT: DO AT YOUR OWN RISK!!! It may brick your laptop`
 0x107 0x2 SaSetup and 0x108 0x3 SaSetup:
+	
+	
+![Screen Shot 2022-08-06 at 13 02 05](https://user-images.githubusercontent.com/35195176/183241628-14f81e09-5367-44d9-a26e-be858fa76727.png)
+![Screen Shot 2022-08-06 at 13 02 18](https://user-images.githubusercontent.com/35195176/183241638-b2d7b5f8-6d1b-41ab-bf14-318fda43882a.png)
 ![DVMT](https://user-images.githubusercontent.com/35195176/183240759-6506689a-c7f4-470d-9895-5d8876afbfe1.png)
 
 
 - `Raid to AHCI` PchSetup  0x44 to 0x00:
 	
+![Screen Shot 2022-08-06 at 13 05 55](https://user-images.githubusercontent.com/35195176/183241664-82a479b9-496a-49a9-a772-d0fa8e0bd6c4.png)
 ![PchSetup](https://user-images.githubusercontent.com/35195176/183240796-21ccfdfe-f318-435c-8a1b-3fae4363fdf5.png)
 
  
