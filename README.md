@@ -16,7 +16,7 @@
 | SmBios              | MacBookPro15,4(NO Serial Number)                  |
 | Wifi + Bluetooth    | Intel Wireless N-7265.       |
 | NVME                | Samsung SSD 980 250GB(macOS)                      |
-| SATA M.2 SSD        | SanDisk SD9SN8W-128G-1006 Media(Windows)          |
+| SATA                | SanDisk SD9SN8W-128G-1006 Media(Windows)          |
 
 
 
@@ -25,12 +25,13 @@
 
 ## MacOS Versions Supported:
 
+- macOS Ventura 13.0 Beta (22A5321d)
 - macOS Monterey 12.5 (21G72)
 
 ## Config & SSDT & Kexts :
 
 <details>  
-<summary> Bios settings for Bios Version F.38：</summary> 
+<summary> Bios settings for Bios Version `F.41` ：</summary> 
 
 - `Intel SGX`
 0x3E 0x0. CpuSetup:
