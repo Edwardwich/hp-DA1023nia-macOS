@@ -25,8 +25,7 @@
 
 ## MacOS Versions Supported:
 
-- macOS Ventura 13.0 Beta (22A5321d)
-- macOS Monterey 12.5 (21G72)
+- macOS Ventura 13.0 (22A380)
 
 ## Config & SSDT & Kexts :
 
