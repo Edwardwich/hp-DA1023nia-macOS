@@ -30,7 +30,7 @@
 ## Config & SSDT & Kexts :
 
 <details>  
-<summary> Bios settings for Bios Version `F.41` ：</summary> 
+<summary> Bios settings for Bios Version `F.42` ：</summary> 
 
 - `Intel SGX`
 0x3E 0x0. CpuSetup:
