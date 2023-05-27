@@ -13,7 +13,7 @@
 | RAM 		      | 8 GB 2400 MHz DDR4.          |
 | LAN 		      | RTL8111                      |
 | Sound Card          | Realtek ALC236 (layout-id: `3` or `14`)           |
-| SmBios              | MacBookPro15,4(NO Serial Number)                  |
+| SmBios              | MacBookPro15,4(NO NO SMBIOS)                  |
 | Wifi + Bluetooth    | Intel Wireless N-7265.       |
 | NVME                | Samsung SSD 980 250GB(macOS)                      |
 | SATA                | SanDisk SD9SN8W-128G-1006 Media(Windows)          |
@@ -25,7 +25,7 @@
 
 ## MacOS Versions Supported:
 
-- macOS Ventura 13.1 (22C65)
+- macOS Ventura 13.3.1 (22E261)
 
 ## Config & SSDT & Kexts :
 
