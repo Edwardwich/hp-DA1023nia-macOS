@@ -25,13 +25,16 @@
 
 ## MacOS Versions Supported:
 
-- macOS Ventura 13.3.1 (22E261)
+- macOS Sonoma 14.2.1 (23C71)
 
 ## Config & SSDT & Kexts :
 
 <details>  
 <summary> Bios settings for Bios Version `F.42` ：</summary> 
 
+- Also u can run `setup_var.efi` in USB and its automaticly apply BIOS patch for `Intel SGX` `DVMT` `SATA MODE`
+![Screenshot 2023-12-28 at 18 25 04](https://github.com/Edwardwich/hp-DA1023nia-macOS/assets/35195176/1b89869b-cf7d-4ce6-b180-9234a43af4c0)
+link : https://github.com/Edwardwich/hp-DA1023nia-macOS/tree/main/BIOS%20Script
 - `Intel SGX`
 0x3E 0x0. CpuSetup:
 	
