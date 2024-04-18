@@ -14,9 +14,8 @@
 | LAN 		      | RTL8111                      |
 | Sound Card          | Realtek ALC236 (layout-id: `3` or `14`)           |
 | SmBios              | MacBookPro15,4(NO NO SMBIOS)                  |
-| Wifi + Bluetooth    | Intel Wireless N-7265.       |
+| Wifi + Bluetooth    | Dell Wireless 1820A Bluetooth 4.1 LE       |
 | NVME                | Samsung SSD 980 250GB(macOS)                      |
-| SATA                | SanDisk SD9SN8W-128G-1006 Media(Windows)          |
 
 
 
@@ -25,7 +24,8 @@
 
 ## MacOS Versions Supported:
 
-- macOS Sonoma 14.2.1 (23C71)
+- macOS Sonoma 14.4.1 (Wifi with OCLP)
+- macOS Ventura 13.6.6
 
 ## Config & SSDT & Kexts :
 
@@ -74,12 +74,8 @@ link : https://github.com/Edwardwich/hp-DA1023nia-macOS/tree/main/BIOS%20Script
 ### HP DA1023nia (`generic`)
 
 - `ec-device` = `generic`
-- `fan-count` = `1`
 - `fan0-addr` = `0x11`
-- `fan0-size` = `0x00`
-- `fan0-div` = `0x02`
-- `fan0-mul` = `0xC8`
-- `fan0-big` = `0x01` 
+- `fan0-mul` = `0x5D`
  <summary>Spoiler: EC RAM details</summary>
 	
 	 ```ASL
@@ -127,25 +123,30 @@ link : https://github.com/Edwardwich/hp-DA1023nia-macOS/tree/main/BIOS%20Script
 <summary> Kexts：</summary>
  
 - `Lilu.kext`
-- `VirtualSMC.kext`
+- `VirtualSMC.kext`(`SMCProcessor.kext` and `SMCSuperIO.kext`)
 - `WhateverGreen.kext`
 - `AppleALC.kext`
 - `CPUFriend.kext`
 - `CPUFriendDataProvider.kext`
-- `NVMeFix.kext`
-- `HibernationFixup.kext`
 - `RestrictEvents.kext`
+- `FeatureUnlock.kext`
 - `VoodooPS2Controller.kext`
 - `BrightnessKeys.kext`
 - `VoodooRMI.kext`
 - `VoodooSMBus.kext`
-- `AirportItlwm.kext`
+- `ACPIBatteryManager.kext`
+- `IOSkywalkFamily.kext`(`For wifi patch OCLP)
+- `IO80211FamilyLegacy.kext`(`For wifi patch OCLP)
+- `IO80211FamilyLegacy.kext/Contents/PlugIns/AirPortBrcmNIC.kext`(`For wifi patch OCLP)
 - `BlueToolFixup.kext`
-- `IntelBluetoothFirmware.kext` 
+- `BrcmFirmwareData.kext`
+- `BrcmPatchRAM3.kext`
+- `XHCI-unsupported.kext`
 - `HoRNDIS.kext`
 - `RealtekRTL8111.kext`
-- `USBInjectAll.kext`(`USBPorts.kext`usb mapping) 
- 
+- `HibernationFixup.kext`
+- `USBToolBox.kext`and`UTBMap.kext`(`USBPorts.kext`usb mapping)
+- `AMFIPass.kext`(`For wifi patch OCLP)
 </details> 
 
 ## What is Working?
@@ -156,14 +157,14 @@ link : https://github.com/Edwardwich/hp-DA1023nia-macOS/tree/main/BIOS%20Script
 - [x] Audio
 - [x] Trackpad (gestures)
 - [x] HDMI: video and audio
-- [x] USB 3.0
+- [x] USB 3.1
 - [x] Battery Management 
 - [x] Brightness
 - [x] Built-in camera
 - [x] Built-in mic
 - [x] Line-in mic
-- [x] Bluetooth Intel
-- [x] Intel wireless
+- [x] Bluetooth
+- [x] wireless
 
  
 
