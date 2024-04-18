@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLQ7zcTz.aml, Sat May 27 09:25:49 2023
+ * Disassembly of iASLvNFUhJ.aml, Thu Apr 18 19:06:34 2024
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000005B8 (1464)
+ *     Length           0x00000620 (1568)
  *     Revision         0x02
- *     Checksum         0xE4
+ *     Checksum         0x18
  *     OEM ID           "HP"
  *     OEM Table ID     "DA1023"
  *     OEM Revision     0x00000000 (0)
@@ -27,9 +27,9 @@ DefinitionBlock ("", "SSDT", 2, "HP", "DA1023", 0x00000000)
     External (_SB_.PCI0.LPCB.ACAD, DeviceObj)
     External (_SB_.PCI0.LPCB.PS2K, DeviceObj)
     External (_SB_.PCI0.LPCB.RTC_._STA, UnknownObj)
+    External (_SB_.PCI0.PEG0.PEGP._DSM, MethodObj)    // 4 Arguments
+    External (_SB_.PCI0.PEG0.PEGP._PS3, MethodObj)    // 0 Arguments
     External (_SB_.PCI0.RP05.PXSX._OFF, MethodObj)    // 0 Arguments
-    External (_SB_.PCI0.RP10, DeviceObj)
-    External (_SB_.PCI0.RP10.PXSX, DeviceObj)
     External (_SB_.PR00, ProcessorObj)
     External (HPTE, FieldUnitObj)
     External (XPRW, MethodObj)    // 2 Arguments
@@ -45,85 +45,45 @@ DefinitionBlock ("", "SSDT", 2, "HP", "DA1023", 0x00000000)
 
         Scope (_SB)
         {
-            Device (USBX)
-            {
-                Name (_ADR, Zero)  // _ADR: Address
-                Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
-                {
-                    If ((Arg2 == Zero))
-                    {
-                        Return (Buffer (One)
-                        {
-                             0x03                                             // .
-                        })
-                    }
-
-                    Return (Package (0x04)
-                    {
-                        "kUSBSleepPortCurrentLimit", 
-                        0x0BB8, 
-                        "kUSBWakePortCurrentLimit", 
-                        0x0BB8
-                    })
-                }
-
-                Method (_STA, 0, NotSerialized)  // _STA: Status
-                {
-                    If (_OSI ("Darwin"))
-                    {
-                        Return (0x0F)
-                    }
-                    Else
-                    {
-                        Return (Zero)
-                    }
-                }
-            }
-
-            Scope (PR00)
-            {
-                If (_OSI ("Darwin"))
-                {
-                    Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
-                    {
-                        If (!Arg2)
-                        {
-                            Return (Buffer (One)
-                            {
-                                 0x03                                             // .
-                            })
-                        }
-
-                        Return (Package (0x02)
-                        {
-                            "plugin-type", 
-                            One
-                        })
-                    }
-                }
-            }
-
-            Device (SLPB)
-            {
-                Name (_HID, EisaId ("PNP0C0E") /* Sleep Button Device */)  // _HID: Hardware ID
-                Method (_STA, 0, NotSerialized)  // _STA: Status
-                {
-                    If (_OSI ("Darwin"))
-                    {
-                        Return (0x0B)
-                    }
-                    Else
-                    {
-                        Return (Zero)
-                    }
-                }
-            }
-
             Scope (PCI0)
             {
-                Device (DGPU)
+                Device (NHG1)
                 {
-                    Name (_HID, "DGPU1000")  // _HID: Hardware ID
+                    Name (_HID, "NHG10000")  // _HID: Hardware ID
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (0x0F)
+                        }
+                        Else
+                        {
+                            Return (Zero)
+                        }
+                    }
+
+                    Method (_INI, 0, NotSerialized)  // _INI: Initialize
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            If ((CondRefOf (\_SB.PCI0.PEG0.PEGP._DSM) && CondRefOf (\_SB.PCI0.PEG0.PEGP._PS3)))
+                            {
+                                \_SB.PCI0.PEG0.PEGP._DSM (ToUUID ("a486d8f8-0bda-471b-a72b-6042a6b5bee0") /* Unknown UUID */, 0x0100, 0x1A, Buffer (0x04)
+                                    {
+                                         0x01, 0x00, 0x00, 0x03                           // ....
+                                    })
+                                \_SB.PCI0.PEG0.PEGP._PS3 ()
+                            }
+                        }
+                        Else
+                        {
+                        }
+                    }
+                }
+
+                Device (RMD1)
+                {
+                    Name (_HID, "RMD10000")  // _HID: Hardware ID
                     Method (_INI, 0, NotSerialized)  // _INI: Initialize
                     {
                         If (CondRefOf (\_SB.PCI0.RP05.PXSX._OFF))
@@ -182,31 +142,96 @@ DefinitionBlock ("", "SSDT", 2, "HP", "DA1023", 0x00000000)
                     }
                 }
 
-                Scope (RP10)
+                Scope (LPCB)
                 {
-                    Scope (PXSX)
+                    Scope (ACAD)
                     {
+                        If (_OSI ("Darwin"))
+                        {
+                            Name (_PRW, Package (0x02)  // _PRW: Power Resources for Wake
+                            {
+                                0x18, 
+                                0x03
+                            })
+                        }
+                    }
+
+                    Device (DMAC)
+                    {
+                        Name (_HID, EisaId ("PNP0200") /* PC-class DMA Controller */)  // _HID: Hardware ID
+                        Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+                        {
+                            IO (Decode16,
+                                0x0000,             // Range Minimum
+                                0x0000,             // Range Maximum
+                                0x01,               // Alignment
+                                0x20,               // Length
+                                )
+                            IO (Decode16,
+                                0x0081,             // Range Minimum
+                                0x0081,             // Range Maximum
+                                0x01,               // Alignment
+                                0x11,               // Length
+                                )
+                            IO (Decode16,
+                                0x0093,             // Range Minimum
+                                0x0093,             // Range Maximum
+                                0x01,               // Alignment
+                                0x0D,               // Length
+                                )
+                            IO (Decode16,
+                                0x00C0,             // Range Minimum
+                                0x00C0,             // Range Maximum
+                                0x01,               // Alignment
+                                0x20,               // Length
+                                )
+                            DMA (Compatibility, NotBusMaster, Transfer8_16, )
+                                {4}
+                        })
                         Method (_STA, 0, NotSerialized)  // _STA: Status
                         {
                             If (_OSI ("Darwin"))
                             {
-                                Return (Zero)
+                                Return (0x0F)
                             }
                             Else
                             {
-                                Return (0x0F)
+                                Return (Zero)
                             }
                         }
                     }
 
-                    Device (ARPT)
+                    Device (EC)
                     {
-                        Name (_ADR, Zero)  // _ADR: Address
+                        Name (_HID, "ACID0001")  // _HID: Hardware ID
                         Method (_STA, 0, NotSerialized)  // _STA: Status
                         {
                             If (_OSI ("Darwin"))
                             {
                                 Return (0x0F)
+                            }
+                            Else
+                            {
+                                Return (Zero)
+                            }
+                        }
+                    }
+
+                    Device (PMCR)
+                    {
+                        Name (_HID, EisaId ("APP9876"))  // _HID: Hardware ID
+                        Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+                        {
+                            Memory32Fixed (ReadWrite,
+                                0xFE000000,         // Address Base
+                                0x00010000,         // Address Length
+                                )
+                        })
+                        Method (_STA, 0, NotSerialized)  // _STA: Status
+                        {
+                            If (_OSI ("Darwin"))
+                            {
+                                Return (0x0B)
                             }
                             Else
                             {
@@ -279,116 +304,78 @@ DefinitionBlock ("", "SSDT", 2, "HP", "DA1023", 0x00000000)
                         }
                     }
                 }
+            }
 
-                Scope (LPCB)
+            Scope (PR00)
+            {
+                If (_OSI ("Darwin"))
                 {
-                    Device (PMCR)
+                    Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
                     {
-                        Name (_HID, EisaId ("APP9876"))  // _HID: Hardware ID
-                        Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+                        If (!Arg2)
                         {
-                            Memory32Fixed (ReadWrite,
-                                0xFE000000,         // Address Base
-                                0x00010000,         // Address Length
-                                )
-                        })
-                        Method (_STA, 0, NotSerialized)  // _STA: Status
-                        {
-                            If (_OSI ("Darwin"))
+                            Return (Buffer (One)
                             {
-                                Return (0x0B)
-                            }
-                            Else
-                            {
-                                Return (Zero)
-                            }
-                        }
-                    }
-
-                    Device (EC)
-                    {
-                        Name (_HID, "ACID0001")  // _HID: Hardware ID
-                        Method (_STA, 0, NotSerialized)  // _STA: Status
-                        {
-                            If (_OSI ("Darwin"))
-                            {
-                                Return (0x0F)
-                            }
-                            Else
-                            {
-                                Return (Zero)
-                            }
-                        }
-                    }
-
-                    Scope (ACAD)
-                    {
-                        If (_OSI ("Darwin"))
-                        {
-                            Name (_PRW, Package (0x02)  // _PRW: Power Resources for Wake
-                            {
-                                0x18, 
-                                0x03
+                                 0x03                                             // .
                             })
                         }
+
+                        Return (Package (0x02)
+                        {
+                            "plugin-type", 
+                            One
+                        })
+                    }
+                }
+            }
+
+            Device (SLPB)
+            {
+                Name (_HID, EisaId ("PNP0C0E") /* Sleep Button Device */)  // _HID: Hardware ID
+                Method (_STA, 0, NotSerialized)  // _STA: Status
+                {
+                    If (_OSI ("Darwin"))
+                    {
+                        Return (0x0B)
+                    }
+                    Else
+                    {
+                        Return (Zero)
+                    }
+                }
+            }
+
+            Device (USBX)
+            {
+                Name (_ADR, Zero)  // _ADR: Address
+                Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+                {
+                    If ((Arg2 == Zero))
+                    {
+                        Return (Buffer (One)
+                        {
+                             0x03                                             // .
+                        })
                     }
 
-                    Device (DMAC)
+                    Return (Package (0x04)
                     {
-                        Name (_HID, EisaId ("PNP0200") /* PC-class DMA Controller */)  // _HID: Hardware ID
-                        Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
-                        {
-                            IO (Decode16,
-                                0x0000,             // Range Minimum
-                                0x0000,             // Range Maximum
-                                0x01,               // Alignment
-                                0x20,               // Length
-                                )
-                            IO (Decode16,
-                                0x0081,             // Range Minimum
-                                0x0081,             // Range Maximum
-                                0x01,               // Alignment
-                                0x11,               // Length
-                                )
-                            IO (Decode16,
-                                0x0093,             // Range Minimum
-                                0x0093,             // Range Maximum
-                                0x01,               // Alignment
-                                0x0D,               // Length
-                                )
-                            IO (Decode16,
-                                0x00C0,             // Range Minimum
-                                0x00C0,             // Range Maximum
-                                0x01,               // Alignment
-                                0x20,               // Length
-                                )
-                            DMA (Compatibility, NotBusMaster, Transfer8_16, )
-                                {4}
-                        })
-                        Method (_STA, 0, NotSerialized)  // _STA: Status
-                        {
-                            If (_OSI ("Darwin"))
-                            {
-                                Return (0x0F)
-                            }
-                            Else
-                            {
-                                Return (Zero)
-                            }
-                        }
-                    }
+                        "kUSBSleepPortCurrentLimit", 
+                        0x0BB8, 
+                        "kUSBWakePortCurrentLimit", 
+                        0x0BB8
+                    })
+                }
 
-                    Scope (PS2K)
+                Method (_STA, 0, NotSerialized)  // _STA: Status
+                {
+                    If (_OSI ("Darwin"))
                     {
-                        Name (RMCF, Package (0x02)
-                        {
-                            "Mouse", 
-                            Package (0x02)
-                            {
-                                "WakeDelay", 
-                                0xC8
-                            }
-                        })
+                        Return (0x0F)
+                    }
+                    Else
+                    {
+                        Return (Zero)
                     }
                 }
             }
@@ -398,7 +385,7 @@ DefinitionBlock ("", "SSDT", 2, "HP", "DA1023", 0x00000000)
         {
             Local0 = Package (0x14)
                 {
-                    "Windows 2012"
+                    "Windows 2015"
                 }
             If (_OSI ("Darwin"))
             {
