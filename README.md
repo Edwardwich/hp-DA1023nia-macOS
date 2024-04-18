@@ -20,8 +20,7 @@
 
 
 
-
-
+## Dont forget add smbios and run bios Script
 ## MacOS Versions Supported:
 
 - macOS Sonoma 14.4.1 (Wifi with OCLP)
