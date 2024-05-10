@@ -11,14 +11,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-sitemap
-
-sass:
-  style: compressed
-  sourcemap: never
-
-feed:
-  path: atom.xml
-
+  
 autopages:
   enabled: false
 
