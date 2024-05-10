@@ -1,37 +1,15 @@
-name: CI - Build Site
-on:
-  push:
-    branches-ignore:
-      - gh-pages
-  workflow_dispatch:
-  pull_request:
-jobs:
-  build:
-    name: Build Site and Deploy
-    runs-on: ubuntu-latest
-    if: github.repository_owner == 'dortania'
-    steps:
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '12'
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: '0'
-          persist-credentials: false
-          submodules: 'recursive'
-      - name: Install
-        run: npm install
-        working-directory: 'docs'
-      - name: Build
-        run: npm run build
-        working-directory: 'docs'
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.7.1
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main'}}
-        with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: docs/.vuepress/dist/
-          CLEAN: true
-          
+title: "HpDA1023nia"
+description: ""
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: dortania
+theme: minima
+header_pages:
+  - topbar/a-about.markdown
+  - topbar/b-troubleshooting.markdown
+  - topbar/d-forums.markdown
+  - docs/README.md
+  - topbar/e-builds.markdown
+plugins:
+  - jekyll-feed
+  - jekyll-mentions
