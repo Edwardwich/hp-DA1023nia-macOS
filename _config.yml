@@ -1,16 +1,1 @@
-title: "hp-DA1023nia-macOS"
-description: ""
-baseurl: ""
-url: ""
 
-exclude:
-  - README.md
-  
-autopages:
-  enabled: false
-
-pagination:
-  enabled: true
-  per_page: 1
-  sort_reverse: true
-  
