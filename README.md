@@ -6,16 +6,17 @@
 
 ## Configuration
 
-| Specifications      | Detail                       |
-| ------------------- | ---------------------------- |
-| CPU                 | Intel(R) Core(TM) i5-8265U   |
-| Integrated Graphics | Intel UHD Graphics 620       |
-| RAM 		      | 8 GB 2400 MHz DDR4.          |
-| LAN 		      | RTL8111                      |
-| Sound Card          | Realtek ALC236 (layout-id: `3` or `14`)           |
-| SmBios              | MacBookPro15,4(NO NO SMBIOS)                  |
-| Wifi + Bluetooth    | Dell Wireless 1820A Bluetooth 4.1 LE       |
-| NVME                | Samsung SSD 980 250GB(macOS)                      |
+| Specifications      | Detail                                 |
+| ------------------- | ---------------------------------------|
+| CPU                 | Intel(R) Core(TM) i5-8265U             |
+| Integrated Graphics | Intel UHD Graphics 620                 |
+| RAM 		      | 8 GB 2400 MHz DDR4.                    |
+| LAN 		      | RTL8111                      	       |
+| Sound Card          | Realtek ALC236 (layout-id: `55`)       |
+| SmBios              | MacBookPro15,4(NO NO SMBIOS)           |
+| Wifi + Bluetooth    | Dell Wireless 1820A Bluetooth 4.1 LE   |
+| NVME                | Samsung SSD 980 250GB(macOS)           |
+| SATA                | SanDisk SD9SN8W-128G-1006(Windows)     |
 
 
 
@@ -23,13 +24,21 @@
 ## Dont forget add smbios and run bios Script
 ## MacOS Versions Supported:
 
-- macOS Sonoma 14.4.1 (Wifi with OCLP)
+- macOS Sonoma 14.5 (Wifi with OCLP)
 - macOS Ventura 13.6.6
 
 ## Config & SSDT & Kexts :
 
 <details>  
 <summary> Bios settings for Bios Version `F.42` ：</summary> 
+
+| Variable name          | Offset | Default value  | Required value  | Description                                                            |
+|------------------------|--------|----------------|-----------------|------------------------------------------------------------------------|
+| CFG Lock               | 0x0x3E | 0x01 (Enabled) | 0x00 (Disabled) | Disables CFG Lock, otherwise you won't be able to boot                 |
+| DVMT Pre-Allocated     | 0x107  | 0x01 (32M)     | 0x02 (64M)      | Increases DVMT pre-allocated size to 64M which is required             |
+| DVMT Total Gfx Mem     | 0x108  | 0x01 (128M)    | 0x03 (MAX)      | Increases total gfx memory limit to maximum                            |
+| SATA Mode Selection    | 0x44   | 0x01 (Raid)    | 0x00 (AHCI)      | MacOS Dobst supprot Riad and disable this improve sata HHD or SSD speed|
+| Bi-directional PROCHOT | 0x75   | 0x01 (Enabled) | 0x00 (Disabled) | Disables PROCHOT, which limits your CPU to 0.79GHz. More info below    |
 
 - Also u can run `setup_var.efi` in USB and its automaticly apply BIOS patch for `Intel SGX` `DVMT` `SATA MODE`
 ![Screenshot 2023-12-28 at 18 25 04](https://github.com/Edwardwich/hp-DA1023nia-macOS/assets/35195176/1b89869b-cf7d-4ce6-b180-9234a43af4c0)
@@ -39,24 +48,14 @@ link : https://github.com/Edwardwich/hp-DA1023nia-macOS/tree/main/BIOS%20Script
 	
 ![Screen Shot 2022-08-06 at 12 59 42](https://user-images.githubusercontent.com/35195176/183241620-8b117c92-289f-40c3-8eab-2c0dc1926ff8.png)
 ![CpuSetup](https://user-images.githubusercontent.com/35195176/183240746-884dad66-5633-42be-aeaa-f1b9c74e318f.png)
-
-
-
 - `cfg lock and DVMT: DO AT YOUR OWN RISK!!! It may brick your laptop`
 0x107 0x2 SaSetup and 0x108 0x3 SaSetup:
-	
-	
 ![Screen Shot 2022-08-06 at 13 02 05](https://user-images.githubusercontent.com/35195176/183241628-14f81e09-5367-44d9-a26e-be858fa76727.png)
 ![Screen Shot 2022-08-06 at 13 02 18](https://user-images.githubusercontent.com/35195176/183241638-b2d7b5f8-6d1b-41ab-bf14-318fda43882a.png)
 ![DVMT](https://user-images.githubusercontent.com/35195176/183240759-6506689a-c7f4-470d-9895-5d8876afbfe1.png)
-
-
 - `Raid to AHCI` PchSetup  0x44 to 0x00:
-	
 ![Screen Shot 2022-08-06 at 13 05 55](https://user-images.githubusercontent.com/35195176/183241664-82a479b9-496a-49a9-a772-d0fa8e0bd6c4.png)
 ![PchSetup](https://user-images.githubusercontent.com/35195176/183240796-21ccfdfe-f318-435c-8a1b-3fae4363fdf5.png)
-
- 
 </details> 
 
 
