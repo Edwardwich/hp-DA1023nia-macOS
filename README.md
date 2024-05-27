@@ -10,8 +10,8 @@
 | ------------------- | ---------------------------------------|
 | CPU                 | Intel(R) Core(TM) i5-8265U             |
 | Integrated Graphics | Intel UHD Graphics 620                 |
-| RAM 		      | 8 GB 2400 MHz DDR4.                    |
-| LAN 		      | RTL8111                      	       |
+| RAM 		              | 8 GB 2400 MHz DDR4.                    |
+| LAN 		              | RTL8111                        	       |
 | Sound Card          | Realtek ALC236 (layout-id: `55`)       |
 | SmBios              | MacBookPro15,4(NO NO SMBIOS)           |
 | Wifi + Bluetooth    | Dell Wireless 1820A Bluetooth 4.1 LE   |
