@@ -29,8 +29,7 @@
 
 ## Config & SSDT & Kexts :
 
-<details>  
-<summary> Bios settings for Bios Version `F.42` ：</summary> 
+Bios settings for Bios Version `F.42`  
 
 | Variable name          | Offset | Default value  | Required value  | Description                                                            |
 |------------------------|--------|----------------|-----------------|------------------------------------------------------------------------|
@@ -40,31 +39,11 @@
 | SATA Mode Selection    | 0x44   | 0x01 (Raid)    | 0x00 (AHCI)      | MacOS Dobst supprot Riad and disable this improve sata HHD or SSD speed|
 | Bi-directional PROCHOT | 0x75   | 0x01 (Enabled) | 0x00 (Disabled) | Disables PROCHOT, which limits your CPU to 0.79GHz. More info below    |
 
-- Also u can run `setup_var.efi` in USB and its automaticly apply BIOS patch for `Intel SGX` `DVMT` `SATA MODE`
-![Screenshot 2023-12-28 at 18 25 04](https://github.com/Edwardwich/hp-DA1023nia-macOS/assets/35195176/1b89869b-cf7d-4ce6-b180-9234a43af4c0)
-link : https://github.com/Edwardwich/hp-DA1023nia-macOS/tree/main/BIOS%20Script
-- `Intel SGX`
-0x3E 0x0. CpuSetup:
-	
-![Screen Shot 2022-08-06 at 12 59 42](https://user-images.githubusercontent.com/35195176/183241620-8b117c92-289f-40c3-8eab-2c0dc1926ff8.png)
-![CpuSetup](https://user-images.githubusercontent.com/35195176/183240746-884dad66-5633-42be-aeaa-f1b9c74e318f.png)
-- `cfg lock and DVMT: DO AT YOUR OWN RISK!!! It may brick your laptop`
-0x107 0x2 SaSetup and 0x108 0x3 SaSetup:
-![Screen Shot 2022-08-06 at 13 02 05](https://user-images.githubusercontent.com/35195176/183241628-14f81e09-5367-44d9-a26e-be858fa76727.png)
-![Screen Shot 2022-08-06 at 13 02 18](https://user-images.githubusercontent.com/35195176/183241638-b2d7b5f8-6d1b-41ab-bf14-318fda43882a.png)
-![DVMT](https://user-images.githubusercontent.com/35195176/183240759-6506689a-c7f4-470d-9895-5d8876afbfe1.png)
-- `Raid to AHCI` PchSetup  0x44 to 0x00:
-![Screen Shot 2022-08-06 at 13 05 55](https://user-images.githubusercontent.com/35195176/183241664-82a479b9-496a-49a9-a772-d0fa8e0bd6c4.png)
-![PchSetup](https://user-images.githubusercontent.com/35195176/183240796-21ccfdfe-f318-435c-8a1b-3fae4363fdf5.png)
-</details> 
 
-
-<details>  
-<summary> APCI：</summary> 
+ 
+ APCI 
 
 - `SSDT-HP_da1023nia`
- 
-</details> 
 
 <details>  
 <summary> FAN：</summary> 
@@ -74,49 +53,7 @@ link : https://github.com/Edwardwich/hp-DA1023nia-macOS/tree/main/BIOS%20Script
 - `ec-device` = `generic`
 - `fan0-addr` = `0x11`
 - `fan0-mul` = `0x5D`
- <summary>Spoiler: EC RAM details</summary>
-	
-	 ```ASL
-	OperationRegion (ECMM, SystemMemory, 0xFC7E0800, 0x1000)
-            Field (ECMM, AnyAcc, Lock, Preserve)
-            {
-                REC1,   8, 
-                REC2,   8, 
-                WEC1,   8, 
-                WEC2,   8, 
-                WMIM,   8, 
-                Offset (0x06), 
-                STMS,   2, 
-                MBMS,   2, 
-                ACLS,   1, 
-                MBSS,   1, 
-                CSHE,   1, 
-                ACSP,   1, 
-                PSAC,   1, 
-                PSBC,   1, 
-                PSED,   1, 
-                Offset (0x08), 
-                PSPD,   8, 
-                BCPD,   8, 
-                BSTH,   8, 
-                PRDT,   8, 
-                UCPT,   8, 
-                HHKP,   8, 
-                SADP,   8, 
-                FANE,   1, 
-                CPUO,   1, 
-                M4GO,   1, 
-                FNSW,   1, 
-                SBTC,   1, 
-                AMDK,   1, 
-                    ,   1, 
-                EHP1,   1, 
-                SAD2,   8, 
-                FRPM,   8, /* 0x11, FAN0 RPM Address */
-                
-            }
- </details>
-</details>  
+</details> 
 <details> 
 <summary> Kexts：</summary>
  
