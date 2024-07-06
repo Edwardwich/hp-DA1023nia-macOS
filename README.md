@@ -23,7 +23,7 @@
 
 ## Dont forget add smbios and run bios Script
 ## MacOS Versions Supported:
-
+- macOS Sequoia 15b2 (Wifi with OCLP)
 - macOS Sonoma 14.5 (Wifi with OCLP)
 - macOS Ventura 13.6.6
 
@@ -104,7 +104,7 @@ Bios settings for Bios Version `F.42`
  
 
 ## Screen Shot
-![Screenshot 2022-06-24 at 12 52 25](https://user-images.githubusercontent.com/35195176/175495153-bfc369cb-582a-4791-aabd-6c8111af25e9.png)
+![Screenshot 2024-07-06 at 19 10 37](https://github.com/Edwardwich/hp-DA1023nia-macOS/assets/35195176/0734bf77-0e8d-4639-98b4-e50382d3010e)
 
 ![Screen Shot 2022-02-19 at 17 53 11](https://user-images.githubusercontent.com/35195176/154846950-0b1d1040-4f00-4fba-9995-d1a110a42d50.png)
 
