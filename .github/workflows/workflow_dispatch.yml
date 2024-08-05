@@ -19,5 +19,5 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
-        name: repository-zip
+        name: BIOSUpdate/file/-zip
         path: BIOSUpdate/file/.zip
