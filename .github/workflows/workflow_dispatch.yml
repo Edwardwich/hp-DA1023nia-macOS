@@ -1,20 +1,23 @@
-name: Zip repository folder and upload artifact
-on: [workflow_dispatch]
+name: Zip and Upload Artifact
+
+on: 
+  push:
+    branches:
+      - main  # You can specify the branch you want to trigger the action
 
 jobs:
-  zip-and-upload:
-    name: Zip and Upload Artifact
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Zip Folder
-        run: |
-          zip -r hp-DA1023nia-macOS-BIOSUpdate.zip hp-DA1023nia-macOS/BIOSUpdate -x ".git/*" ".github/*"
+    - name: Zip BIOSUpdate/file
+      run: zip -r repository.zip .
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: hp-DA1023nia-macOS-BIOSUpdate
-          path: hp-DA1023nia-macOS-BIOSUpdate.zip
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: repository-zip
+        path: repository.zip
