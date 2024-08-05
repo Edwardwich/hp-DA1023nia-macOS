@@ -13,7 +13,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Zip BIOSUpdate/file
+    - name: Zip repository
       run: zip -r BIOSUpdate/file/.zip .
 
     - name: Upload artifact
