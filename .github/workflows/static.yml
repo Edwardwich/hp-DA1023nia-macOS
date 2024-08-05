@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: Zip Folder
         run: |
-          rm -rf <hp-DA1023nia-macOS>.zip
-          zip -r <hp-DA1023nia-macOS>.zip <hp-DA1023nia-macOS> -x ".git/*" ".github/*"
+          rm -rf <hp-DA1023nia-macOS/BIOSUpdate>.zip
+          zip -r <hp-DA1023nia-macOS/BIOSUpdate>.zip <hp-DA1023nia-macOS/BIOSUpdate> -x ".git/*" ".github/*"
