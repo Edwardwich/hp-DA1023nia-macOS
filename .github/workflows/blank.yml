@@ -16,6 +16,7 @@ jobs:
     - name: Zip repository
       run: |
       rm -rf <hp-DA1023nia-macOS/BIOSUpdate>.zip
+      zip -r <hp-DA1023nia-macOS/BIOSUpdate>.zip <hp-DA1023nia-macOS/BIOSUpdate> -x ".git/*" ".github/*"
       zip -r repository.zip 
 
     - name: Upload artifact
