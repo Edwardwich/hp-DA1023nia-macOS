@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLvNFUhJ.aml, Thu Apr 18 19:06:34 2024
+ * Disassembly of iASLJKDLkS.aml, Tue Sep 24 00:52:12 2024
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000620 (1568)
+ *     Length           0x00000755 (1877)
  *     Revision         0x02
- *     Checksum         0x18
+ *     Checksum         0xFE
  *     OEM ID           "HP"
  *     OEM Table ID     "DA1023"
  *     OEM Revision     0x00000000 (0)
@@ -23,13 +23,15 @@ DefinitionBlock ("", "SSDT", 2, "HP", "DA1023", 0x00000000)
     External (_SB_.AWAC._STA, UnknownObj)
     External (_SB_.PCI0, DeviceObj)
     External (_SB_.PCI0.GFX0, DeviceObj)
+    External (_SB_.PCI0.GFX0.CLID, UnknownObj)
     External (_SB_.PCI0.LPCB, DeviceObj)
     External (_SB_.PCI0.LPCB.ACAD, DeviceObj)
     External (_SB_.PCI0.LPCB.PS2K, DeviceObj)
     External (_SB_.PCI0.LPCB.RTC_._STA, UnknownObj)
-    External (_SB_.PCI0.PEG0.PEGP._DSM, MethodObj)    // 4 Arguments
-    External (_SB_.PCI0.PEG0.PEGP._PS3, MethodObj)    // 0 Arguments
+    External (_SB_.PCI0.RP05._DSM, MethodObj)    // 4 Arguments
     External (_SB_.PCI0.RP05.PXSX._OFF, MethodObj)    // 0 Arguments
+    External (_SB_.PCI0.XHC_, DeviceObj)
+    External (_SB_.PCI0.XHC_.RHUB, DeviceObj)
     External (_SB_.PR00, ProcessorObj)
     External (HPTE, FieldUnitObj)
     External (XPRW, MethodObj)    // 2 Arguments
@@ -50,44 +52,18 @@ DefinitionBlock ("", "SSDT", 2, "HP", "DA1023", 0x00000000)
                 Device (NHG1)
                 {
                     Name (_HID, "NHG10000")  // _HID: Hardware ID
-                    Method (_STA, 0, NotSerialized)  // _STA: Status
-                    {
-                        If (_OSI ("Darwin"))
-                        {
-                            Return (0x0F)
-                        }
-                        Else
-                        {
-                            Return (Zero)
-                        }
-                    }
-
                     Method (_INI, 0, NotSerialized)  // _INI: Initialize
                     {
-                        If (_OSI ("Darwin"))
+                        If ((CondRefOf (\_SB.PCI0.RP05._DSM) && CondRefOf (\_SB.PCI0.RP05.PXSX._OFF)))
                         {
-                            If ((CondRefOf (\_SB.PCI0.PEG0.PEGP._DSM) && CondRefOf (\_SB.PCI0.PEG0.PEGP._PS3)))
-                            {
-                                \_SB.PCI0.PEG0.PEGP._DSM (ToUUID ("a486d8f8-0bda-471b-a72b-6042a6b5bee0") /* Unknown UUID */, 0x0100, 0x1A, Buffer (0x04)
-                                    {
-                                         0x01, 0x00, 0x00, 0x03                           // ....
-                                    })
-                                \_SB.PCI0.PEG0.PEGP._PS3 ()
-                            }
-                        }
-                        Else
-                        {
-                        }
-                    }
-                }
-
-                Device (RMD1)
-                {
-                    Name (_HID, "RMD10000")  // _HID: Hardware ID
-                    Method (_INI, 0, NotSerialized)  // _INI: Initialize
-                    {
-                        If (CondRefOf (\_SB.PCI0.RP05.PXSX._OFF))
-                        {
+                            \_SB.PCI0.RP05._DSM (Buffer (0x10)
+                                {
+                                    /* 0000 */  0x21, 0x1B, 0x97, 0xAD, 0x48, 0x67, 0x07, 0x37,  // !...Hg.7
+                                    /* 0008 */  0xF0, 0x34, 0x3E, 0xD6, 0xE4, 0x37, 0x97, 0xC4   // .4>..7..
+                                }, 0x0100, 0x1A, Buffer (0x04)
+                                {
+                                     0x01, 0x00, 0x00, 0x03                           // ....
+                                })
                             \_SB.PCI0.RP05.PXSX._OFF ()
                         }
                     }
@@ -201,22 +177,6 @@ DefinitionBlock ("", "SSDT", 2, "HP", "DA1023", 0x00000000)
                         }
                     }
 
-                    Device (EC)
-                    {
-                        Name (_HID, "ACID0001")  // _HID: Hardware ID
-                        Method (_STA, 0, NotSerialized)  // _STA: Status
-                        {
-                            If (_OSI ("Darwin"))
-                            {
-                                Return (0x0F)
-                            }
-                            Else
-                            {
-                                Return (Zero)
-                            }
-                        }
-                    }
-
                     Device (PMCR)
                     {
                         Name (_HID, EisaId ("APP9876"))  // _HID: Hardware ID
@@ -301,6 +261,194 @@ DefinitionBlock ("", "SSDT", 2, "HP", "DA1023", 0x00000000)
                         Else
                         {
                             Return (Zero)
+                        }
+                    }
+                }
+
+                Scope (XHC)
+                {
+                    Scope (RHUB)
+                    {
+                        Method (_STA, 0, NotSerialized)  // _STA: Status
+                        {
+                            If (_OSI ("Darwin"))
+                            {
+                                Return (Zero)
+                            }
+                            Else
+                            {
+                                Return (0x10)
+                            }
+                        }
+                    }
+
+                    Device (XHUB)
+                    {
+                        Name (_ADR, Zero)  // _ADR: Address
+                        Method (_STA, 0, NotSerialized)  // _STA: Status
+                        {
+                            If (_OSI ("Darwin"))
+                            {
+                                Return (0x0F)
+                            }
+                            Else
+                            {
+                                Return (Zero)
+                            }
+                        }
+
+                        Device (HS01)
+                        {
+                            Name (_ADR, One)  // _ADR: Address
+                            Name (_UPC, Package (0x04)  // _UPC: USB Port Capabilities
+                            {
+                                0xFF, 
+                                Zero, 
+                                Zero, 
+                                Zero
+                            })
+                        }
+
+                        Device (HS02)
+                        {
+                            Name (_ADR, 0x02)  // _ADR: Address
+                            Name (_UPC, Package (0x04)  // _UPC: USB Port Capabilities
+                            {
+                                0xFF, 
+                                Zero, 
+                                Zero, 
+                                Zero
+                            })
+                        }
+
+                        Device (HS03)
+                        {
+                            Name (_ADR, 0x03)  // _ADR: Address
+                            Name (_UPC, Package (0x04)  // _UPC: USB Port Capabilities
+                            {
+                                0xFF, 
+                                Zero, 
+                                Zero, 
+                                Zero
+                            })
+                        }
+
+                        Device (HS04)
+                        {
+                            Name (_ADR, 0x04)  // _ADR: Address
+                            Name (_UPC, Package (0x04)  // _UPC: USB Port Capabilities
+                            {
+                                0xFF, 
+                                0xFF, 
+                                Zero, 
+                                Zero
+                            })
+                        }
+
+                        Device (HS05)
+                        {
+                            Name (_ADR, 0x05)  // _ADR: Address
+                            Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
+                            {
+                                Name (UPCP, Package (0x04)
+                                {
+                                    0xFF, 
+                                    0xFF, 
+                                    Zero, 
+                                    Zero
+                                })
+                                Return (UPCP) /* \_SB_.PCI0.XHC_.XHUB.HS05._UPC.UPCP */
+                            }
+
+                            Method (_PLD, 0, Serialized)  // _PLD: Physical Location of Device
+                            {
+                                Name (PLDP, Package (0x01)
+                                {
+                                    Buffer (0x14)
+                                    {
+                                        /* 0000 */  0x82, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,  // ........
+                                        /* 0008 */  0x24, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,  // $.......
+                                        /* 0010 */  0xC8, 0x00, 0xA0, 0x00                           // ....
+                                    }
+                                })
+                                Return (PLDP) /* \_SB_.PCI0.XHC_.XHUB.HS05._PLD.PLDP */
+                            }
+
+                            Device (WCAM)
+                            {
+                                Method (_STA, 0, Serialized)  // _STA: Status
+                                {
+                                    Return (0x0F)
+                                }
+
+                                Method (_ADR, 0, Serialized)  // _ADR: Address
+                                {
+                                    Local0 = 0x05
+                                    Return (Local0)
+                                }
+
+                                Method (_UPC, 0, Serialized)  // _UPC: USB Port Capabilities
+                                {
+                                    Name (UPCP, Package (0x04)
+                                    {
+                                        0xFF, 
+                                        0xFF, 
+                                        Zero, 
+                                        Zero
+                                    })
+                                    Return (UPCP) /* \_SB_.PCI0.XHC_.XHUB.HS05.WCAM._UPC.UPCP */
+                                }
+
+                                Method (_PLD, 0, Serialized)  // _PLD: Physical Location of Device
+                                {
+                                    Name (PLDP, Package (0x01)
+                                    {
+                                        Buffer (0x14)
+                                        {
+                                            /* 0000 */  0x82, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,  // ........
+                                            /* 0008 */  0x24, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,  // $.......
+                                            /* 0010 */  0xC8, 0x00, 0xA0, 0x00                           // ....
+                                        }
+                                    })
+                                    Return (PLDP) /* \_SB_.PCI0.XHC_.XHUB.HS05.WCAM._PLD.PLDP */
+                                }
+                            }
+                        }
+
+                        Device (HS10)
+                        {
+                            Name (_ADR, 0x0A)  // _ADR: Address
+                            Name (_UPC, Package (0x04)  // _UPC: USB Port Capabilities
+                            {
+                                0xFF, 
+                                0xFF, 
+                                Zero, 
+                                Zero
+                            })
+                        }
+
+                        Device (SS01)
+                        {
+                            Name (_ADR, 0x0D)  // _ADR: Address
+                            Name (_UPC, Package (0x04)  // _UPC: USB Port Capabilities
+                            {
+                                0xFF, 
+                                0x03, 
+                                Zero, 
+                                Zero
+                            })
+                        }
+
+                        Device (SS02)
+                        {
+                            Name (_ADR, 0x0E)  // _ADR: Address
+                            Name (_UPC, Package (0x04)  // _UPC: USB Port Capabilities
+                            {
+                                0xFF, 
+                                0x03, 
+                                Zero, 
+                                Zero
+                            })
                         }
                     }
                 }
