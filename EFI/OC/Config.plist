@@ -25,6 +25,36 @@
                     <key>BaseSkip</key>
                     <integer>0</integer>
                     <key>Comment</key>
+                    <string>Rename EC0 to EC (USB Power)</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>RUMwXw==</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>RUNfXw==</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data>RFNEVA==</data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
                     <string>_OSI to XOSI,</string>
                     <key>Count</key>
                     <integer>0</integer>
@@ -70,6 +100,36 @@
                     <data></data>
                     <key>Replace</key>
                     <data>WFBSVwI=</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data></data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>BAT1 to BAT0</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>QEJBVDE=</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>QEJBVDA=</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -169,10 +229,10 @@
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1D,0x1)/Pci(0x0,0x0)</key>
                 <dict>
+                    <key>brcmfx-aspm</key>
+                    <data>AAAAQA==</data>
                     <key>brcmfx-country</key>
                     <string>#a</string>
-                    <key>pci-aspm-default</key>
-                    <integer>0</integer>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
                 <dict>
@@ -180,15 +240,9 @@
                     <string>generic</string>
                     <key>fan0-addr</key>
                     <data>EQAAAA==</data>
-                    <key>fan0-div</key>
-                    <data>AgAAAA==</data>
-                    <key>fan0-mul</key>
-                    <data>uwAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-                <dict>
-                    <key>alc-verbs</key>
-                    <data>AQAAAA==</data>
+                <di
                     <key>layout-id</key>
                     <integer>55</integer>
                 </dict>
@@ -198,26 +252,18 @@
                     <data>AQAAAA==</data>
                     <key>AAPL,ig-platform-id</key>
                     <data>CQCbPg==</data>
-                    <key>complete-modeset</key>
-                    <data>AQAAAA==</data>
                     <key>device-id</key>
                     <data>mz4AAA==</data>
                     <key>disable-agdc</key>
                     <data>AQAAAA==</data>
                     <key>enable-backlight-registers-alternative-fix</key>
                     <data>AQAAAA==</data>
-                    <key>enable-backlight-registers-fix</key>
-                    <data>AQAAAA==</data>
                     <key>enable-backlight-smoother</key>
-                    <data>AQAAAA==</data>
-                    <key>enable-hdmi-dividers-fix</key>
                     <data>AQAAAA==</data>
                     <key>enable-hdmi20</key>
                     <data>AQAAAA==</data>
                     <key>force-online</key>
                     <data>AQAAAA==</data>
-                    <key>force-online-framebuffers</key>
-                    <data>AAAAAAAAAAE=</data>
                     <key>framebuffer-con1-busid</key>
                     <data>AQAAAA==</data>
                     <key>framebuffer-con1-enable</key>
@@ -232,8 +278,6 @@
                     <data>AgAAAA==</data>
                     <key>model</key>
                     <string>Intel Iris Plus Graphics 645</string>
-                    <key>rps-control</key>
-                    <data>AQAAAA==</data>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -903,7 +947,7 @@
                 <key>ThirdPartyDrives</key>
                 <false/>
                 <key>XhciPortLimit</key>
-                <false/>
+                <true/>
             </dict>
             <key>Scheme</key>
             <dict>
