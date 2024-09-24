@@ -73,8 +73,8 @@ jobs:
     - name: Clean up
       run: |
         echo "Cleaning up..."
-        rm -Rf "OpenCore-Release.zip"
-        rm -Rf ./X64
+        rm -rf "OpenCore-Release.zip"
+        rm -rf ./X64
         rm -Rf Utilities
         rm -Rf IA32
         rm -Rf Docs
@@ -86,7 +86,7 @@ jobs:
         zip -r EFI.zip EFI
 
     - name: Upload EFI artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: OpenCore-EFI
         path: EFI.zip
