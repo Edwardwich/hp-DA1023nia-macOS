@@ -23,7 +23,8 @@
 
 ## Dont forget add smbios and run bios Script
 ## MacOS Versions Supported:
-- macOS Sequoia 15b2 (Wifi with OCLP)
+- macOS Sequoia 15.1 B5 (Wifi with OCLP)
+- macOS Sequoia 15 (Wifi with OCLP)
 - macOS Sonoma 14.5 (Wifi with OCLP)
 - macOS Ventura 13.6.6
 
@@ -33,7 +34,7 @@ Bios settings for Bios Version `F.42`
 
 | Variable name          | VarStore| Offset | Default value  | Required value  | Description                                                            |
 |------------------------|---------|--------|----------------|-----------------|------------------------------------------------------------------------|
-| CFG Lock               |CpuSetup | 0x0x3E | 0x01 (Enabled) | 0x00 (Disabled) | Disables CFG Lock, otherwise you won't be able to boot                 |
+| CFG Lock               |CpuSetup | 0x3E   | 0x01 (Enabled) | 0x00 (Disabled) | Disables CFG Lock, otherwise you won't be able to boot                 |
 | DVMT Pre-Allocated     |SaSetup  | 0x107  | 0x01 (32M)     | 0x02 (64M)      | Increases DVMT pre-allocated size to 64M which is required             |
 | DVMT Total Gfx Mem     |SaSetup  | 0x108  | 0x01 (128M)    | 0x03 (MAX)      | Increases total gfx memory limit to maximum                            |
 | SATA Mode Selection    |PchSetup | 0x44   | 0x01 (Raid)    | 0x00 (AHCI)     | MacOS Dobst supprot Riad and disable this improve sata HHD or SSD speed|
