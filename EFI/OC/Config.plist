@@ -243,8 +243,6 @@
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
-                    <key>AAPL,GfxYTile</key>
-                    <data>AQAAAA==</data>
                     <key>AAPL,ig-platform-id</key>
                     <data>CQCbPg==</data>
                     <key>device-id</key>
@@ -268,8 +266,6 @@
                     <key>framebuffer-patch-enable</key>
                     <data>AQAAAA==</data>
                     <key>framebuffer-portcount</key>
-                    <data>AgAAAA==</data>
-                    <key>igfxfw</key>
                     <data>AgAAAA==</data>
                     <key>model</key>
                     <string>Intel Iris Plus Graphics 645</string>
