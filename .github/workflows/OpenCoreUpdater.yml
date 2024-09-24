@@ -68,7 +68,31 @@ jobs:
         echo "Removing all files in EFI/OC/Tools..."
         rm -rf ./EFI/OC/Tools/*
 
-    # Add additional steps for the remaining operations as needed
+    - name: Remove unwanted drivers in EFI/OC/Drivers
+      run: |
+        echo "Removing files in EFI/OC/Drivers except for OpenCanopy.efi, OpenRuntime.efi, and ResetNvramEntry.efi..."
+        cd ./EFI/OC/Drivers
+        for file in *; do
+          if [[ "$file" != "OpenCanopy.efi" && "$file" != "OpenRuntime.efi" && "$file" != "ResetNvramEntry.efi" ]]; then
+            rm -f "$file"
+          fi
+        done
+        cd -  # Return to the previous directory
+
+    - name: Copy HfsPlus.efi to EFI/OC/Drivers
+      run: |
+        echo "Copying HfsPlus.efi to EFI/OC/Drivers..."
+        cp ./HfsPlus.efi ./EFI/OC/Drivers/
+
+    - name: Copy RU.efi to EFI/OC/Tools
+      run: |
+        echo "Copying RU.efi to EFI/OC/Tools..."
+        cp ./RU.efi ./EFI/OC/Tools/
+
+    - name: Copy SSDT-HP_da1023nia.aml to EFI/OC/ACPI
+      run: |
+        echo "Copying SSDT-HP_da1023nia.aml to EFI/OC/ACPI..."
+        cp ./SSDT-HP_da1023nia.aml ./EFI/OC/ACPI/
 
     - name: Clean up
       run: |
