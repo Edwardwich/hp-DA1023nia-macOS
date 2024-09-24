@@ -11,9 +11,9 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4.1.7
 
-    - name: Zip repository
+    - name: Zip hp-DA1023nia-macOS
       run: |
         rm -Rf _config.yml
         rm -Rf BIOSUpdate
@@ -25,17 +25,22 @@ jobs:
         rm -Rf "IORegistry.ioreg"
         rm -Rf README.md
       
-        zip -r repository.zip .
+        zip -r hp-DA1023nia-macOS.zip .
 
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
-        name: repository-zip
-        path: repository.zip
+        name: hp-DA1023nia-macOS-zip
+        path: hp-DA1023nia-macOS.zip
 
-    - name: Upload to Release
-      uses: actions/upload-artifact@v3
+    - name: Upload build
+      uses: svenstaro/upload-release-action@2.9.0
+      if: github.event_name != 'pull_request'
       with:
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        name: repository-zip
-        path: repository.zip
+         repo_token: ${{ secrets.GITHUB_TOKEN }}
+         file: ./*.zip
+         tag: ${{ github.ref }}
+         release_name: EFI hp-DA1023nia-macOS Hackintosh
+         body: ${{ github.event_name != 'release' && github.event.head_commit.message || '' }}
+         file_glob: true
+         overwrite: true
