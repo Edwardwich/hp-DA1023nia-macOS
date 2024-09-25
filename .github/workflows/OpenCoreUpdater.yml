@@ -114,12 +114,7 @@ jobs:
       with:
         name: OpenCore-EFI
         path: hp-DA1023nia-macOS.zip
-    - name: Delete Old Prerelease
-      uses: dev-drprasad/delete-tag-and-release@v0.2.1
-      with:
-        tag_name: ${{ env.OLD_PRE_TAG }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
     - name: Upload build
       uses: svenstaro/upload-release-action@2.9.0
       if: github.event_name != 'pull_request'
