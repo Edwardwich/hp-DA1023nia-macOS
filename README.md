@@ -21,7 +21,6 @@
 
 
 
-## Dont forget add smbios and run bios Script
 ## MacOS Versions Supported:
 - macOS Sequoia 15.1 B5 (Wifi with OCLP)
 - macOS Sequoia 15 (Wifi with OCLP)
