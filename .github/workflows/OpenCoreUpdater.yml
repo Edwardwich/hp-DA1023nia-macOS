@@ -61,7 +61,7 @@ jobs:
     - name: Copy Resources to EFI/OC
       run: |
         echo "Copying Config.plist to EFI/OC..."
-        cp ./Resources ./EFI/OC/
+        cp -r ./Resources ./EFI/OC/
         
     - name: Copy Config.plist to EFI/OC
       run: |
