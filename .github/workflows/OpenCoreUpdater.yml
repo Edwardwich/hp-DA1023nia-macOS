@@ -57,7 +57,12 @@ jobs:
           echo "Error: Kext folder not found."
           exit 1
         fi
-
+    
+    - name: Copy Resources to EFI/OC
+      run: |
+        echo "Copying Config.plist to EFI/OC..."
+        cp ./Resources ./EFI/OC/
+        
     - name: Copy Config.plist to EFI/OC
       run: |
         echo "Copying Config.plist to EFI/OC..."
@@ -102,6 +107,7 @@ jobs:
         rm -Rf Utilities
         rm -Rf IA32
         rm -Rf Docs
+        rm -Rf ./X64/EFI/OC/Resources
         echo "OpenCore X64 EFI folder has been successfully extracted."
 
     - name: Zip the EFI directory
