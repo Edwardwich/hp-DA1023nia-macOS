@@ -22,8 +22,8 @@
 
 
 ## MacOS Versions Supported:
-- macOS Sequoia 15.1 B5 (Wifi with OCLP)
-- macOS Sequoia 15 (Wifi with OCLP)
+- macOS Sequoia 15.1 (Wifi with OCLP)
+- macOS Sequoia 15.0.1 (Wifi with OCLP)
 - macOS Sonoma 14.5 (Wifi with OCLP)
 - macOS Ventura 13.6.6
 
