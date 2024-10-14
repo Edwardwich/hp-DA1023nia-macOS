@@ -1051,7 +1051,7 @@
 				<key>bluetoothInternalControllerInfo</key>
 				<data>AAAAAAAAAAAAAAAAAAA=</data>
 				<key>boot-args</key>
-				<string>hbfx-ahbm=933</string>
+				<string>hbfx-ahbm=1</string>
 				<string></string>
 				<key>csr-active-config</key>
 				<data>AwgAAA==</data>
