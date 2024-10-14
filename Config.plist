@@ -1051,6 +1051,7 @@
 				<key>bluetoothInternalControllerInfo</key>
 				<data>AAAAAAAAAAAAAAAAAAA=</data>
 				<key>boot-args</key>
+				<string>hbfx-ahbm=933</string>
 				<string></string>
 				<key>csr-active-config</key>
 				<data>AwgAAA==</data>
@@ -1407,7 +1408,20 @@
 			<true/>
 		</dict>
 		<key>ReservedMemory</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Address</key>
+                    		<integer>569344</integer>
+                    		<key>Comment</key>
+                    		<string>Fix wake hibernation 25</string>
+                    		<key>Enabled</key>
+                    		<true/>
+                    		<key>Size</key>
+                    		<integer>4096</integer>
+                    		<key>Type</key>
+                    		<string>RuntimeCode</string>
+			</dict>
+		</array>
 		<key>Unload</key>
 		<array/>
 	</dict>
