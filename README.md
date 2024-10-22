@@ -140,4 +140,3 @@ Bios settings for Bios Version `F.42`
 - [@Lorys89](https://github.com/Lorys89) for fix bios problem
 
  
-- [@zxystd](https://github.com/OpenIntelWireless/itlwm) created kexts of wifi and bluetooth  
