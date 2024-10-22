@@ -31,13 +31,13 @@
 
 Bios settings for Bios Version `F.42`  
 
-| Variable name          | VarStore| Offset | Default value  | Required value  | Description                                                            |
-|------------------------|---------|--------|----------------|-----------------|------------------------------------------------------------------------|
-| CFG Lock               |CpuSetup | 0x3E   | 0x01 (Enabled) | 0x00 (Disabled) | Disables CFG Lock, otherwise you won't be able to boot                 |
-| DVMT Pre-Allocated     |SaSetup  | 0x107  | 0x01 (32M)     | 0x02 (64M)      | Increases DVMT pre-allocated size to 64M which is required             |
-| DVMT Total Gfx Mem     |SaSetup  | 0x108  | 0x01 (128M)    | 0x03 (MAX)      | Increases total gfx memory limit to maximum                            |
-| SATA Mode Selection    |PchSetup | 0x44   | 0x01 (Raid)    | 0x00 (AHCI)     | MacOS Dobst supprot Riad and disable this improve sata HHD or SSD speed|
-| Bi-directional PROCHOT |CpuSetup | 0x75   | 0x01 (Enabled) | 0x00 (Disabled) | Disables PROCHOT, which limits your CPU to 0.79GHz. More info below    |
+| Variable name                     | VarStore| Offset | Default value  | Required value  | Description                                                            |
+|-----------------------------------|---------|--------|----------------|-----------------|------------------------------------------------------------------------|
+| CFG Lock                          |CpuSetup | 0x3E   | 0x01 (Enabled) | 0x00 (Disabled) | Disables CFG Lock, otherwise you won't be able to boot                 |
+| DVMT Pre-Allocated                |SaSetup  | 0x107  | 0x01 (32M)     | 0x02 (64M)      | Increases DVMT pre-allocated size to 64M which is required             |
+| DVMT Total Gfx Mem                |SaSetup  | 0x108  | 0x01 (128M)    | 0x03 (MAX)      | Increases total gfx memory limit to maximum                            |
+| SATA Mode Selection               |PchSetup | 0x44   | 0x01 (Raid)    | 0x00 (AHCI)     | MacOS Dobst supprot Riad and disable this improve sata HHD or SSD speed|
+| FCLK Frequency for Early Power On |CpuSetup | 0x101  | 0x01 (1GHz)    | 0x03 (Auto)     | frequency during the early power-on                                    |
 
 
  
