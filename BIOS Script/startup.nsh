@@ -1,9 +1,5 @@
 # Disable command printing
 @echo -off
-
-echo "BIOS OFFSETs MACOS REQ"
-echo "This will undervolt i5-8265u"
-
 echo "CFG Lock (disable)"
 setup_var.efi 0x3E 0x0 -n CpuSetup
 
