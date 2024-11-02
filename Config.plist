@@ -311,7 +311,7 @@
 			</dict>
 			<dict>
 				<key>Arch</key>
-				<string>Any</string>
+				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>SMCLightSensor.kext</string>
 				<key>Comment</key>
